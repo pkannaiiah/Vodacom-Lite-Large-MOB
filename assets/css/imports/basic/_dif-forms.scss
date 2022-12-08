@@ -290,6 +290,7 @@ textarea.form-control {
         border-left:0px;
         border-bottom: 1px solid $border;
         border-radius: 0px !important;
+        padding-left:0px;
     }
     .form-control{
         font-size:28px;
@@ -373,7 +374,7 @@ textarea.form-control {
      }
     .input-group-comp{
         .form-control{font-size: 20px; line-height: 22px;}
-        .form-control span{font-size: 20px; line-height: 22px;}
+        span{font-size: 20px; line-height: 22px;}
      }
      .dropdown-comp{
         width: 100%;
