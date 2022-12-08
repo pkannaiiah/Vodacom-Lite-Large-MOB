@@ -721,6 +721,7 @@ textarea.form-control {
 }
 
 .dropdown-comp {
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
   width: 50%;
 }
 .dropdown-comp .list {
@@ -735,10 +736,12 @@ textarea.form-control {
 }
 .dropdown-comp .btn-secondary {
   font-size: 24px;
+  line-height: 30px;
   color: #666 !important;
   background-color: #FFFFFF !important;
   border-color: #FFFFFF !important;
   width: 100%;
+  height: 49px;
 }
 .dropdown-comp .dropdown-menu-dark {
   background: #FFFFFF !important;
@@ -748,6 +751,7 @@ textarea.form-control {
 }
 .dropdown-comp .dropdown-item {
   font-size: 24px;
+  line-height: 30px;
   color: #666;
   padding: 0px;
 }
@@ -795,6 +799,17 @@ textarea.form-control {
   .input-group-comp .form-control {
     font-size: 20px;
     line-height: 22px;
+  }
+  .dropdown-comp {
+    width: 100%;
+  }
+  .dropdown-comp .btn-secondary {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .dropdown-comp .dropdown-item {
+    font-size: 20px;
+    line-height: 23px;
   }
 }
 * {
