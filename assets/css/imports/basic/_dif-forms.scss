@@ -1,15 +1,18 @@
 //Forms
+.border-rad20{
+    border-radius:20px;
+ }
 .form-control {
     font-size: 16px;
     border-radius: 4px;
     @extend %white-bg;
-    border:.5px solid $blue-gray;
+    border:.5px solid $border;
     height: 46px;
     padding: 10px 16px;
-    @extend %noto-regular;
+    @extend %vodafonrg-regular;
     position: relative;
     &:focus {
-        border-color: $blue-gray;
+        border-color: $border;
         @extend %white-bg;
     }
     &:disabled,
@@ -17,7 +20,7 @@
     &[readonly] {
         background: $light;
         color: $dark-gray;
-        border-color:$dark-gray ;
+        border-color:$border;
     }
     &.error{
         border-color: $primary;
@@ -28,35 +31,31 @@
     }
 }
 
-.border-rad20{
-    border-radius:20px;
- }
-
 //Placeholder
 ::placeholder {
     color: $placeholder;
     opacity: 1;
-    @extend %noto-regular;
+    @extend %vodafonrg-regular;
 }
 
 ::-webkit-input-placeholder {
     color: $placeholder;
-    @extend %noto-regular;
+    @extend %vodafonrg-regular;
 }
 
 ::-moz-placeholder {
     color: $placeholder;
-    @extend %noto-regular;
+    @extend %vodafonrg-regular;
 }
 
 :-ms-input-placeholder {
     color: $placeholder;
-    @extend %noto-regular;
+    @extend %vodafonrg-regular;
 }
 
 :-moz-placeholder {
     color: $placeholder;
-    @extend %noto-regular;
+    @extend %vodafonrg-regular;
 }
 
 input::-webkit-outer-spin-button,
@@ -133,7 +132,7 @@ input::-webkit-inner-spin-button {
         margin-bottom: 0px;
         font-size: 14px;
         position: relative;
-        @extend %noto-regular;
+        @extend %vodafonrg-regular;
         &::before {
             content: "";
             position: absolute;
@@ -182,7 +181,7 @@ input::-webkit-inner-spin-button {
         margin-bottom: 0px;
         position: relative;
         font-size: 14px;
-        @extend %noto-regular;
+        @extend %vodafonrg-regular;
         &::before {
             content: "";
             position: absolute;
@@ -245,7 +244,7 @@ textarea.form-control {
         height:49px;
         padding:0px 37px;
         .option-heding{
-            background-color:#CCCCCC;
+            background-color:$light-black;
             color: #666666;
         }
         .option-cont{display: flex; justify-content: space-between;}
@@ -262,11 +261,56 @@ textarea.form-control {
     top: -2px;
  }
 
-
- .input-bas-comp{
-    border: 1px solid #666666;
+ .input-bas-comp{    
+    label{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .form-control{
+        font-family: $vodafonlt-light;
+        font-size:28px;
+        line-height: 30px;
+        background:transparent;
+        border-top:0px;
+        border-right:0px;
+        border-left:0px;
+        border-bottom: 1px solid $border;
+        border-radius: 0px !important;
+    }
+    .form-control:focus{
+        border-bottom: 1px solid $primary;
+    }
  }
 
+ .input-group-comp{
+    span{
+        background:transparent;
+        border-top:0px;
+        border-right:0px;
+        border-left:0px;
+        border-bottom: 1px solid $border;
+        border-radius: 0px !important;
+    }
+    .form-control{
+        font-size:28px;
+        line-height: 30px;
+        background:transparent;
+        border-top:0px;
+        border-right:0px;
+        border-left:0px;
+        border-bottom: 1px solid $border;
+        border-radius: 0px !important;
+        @extend %vodafonlg-light;
+    }
+    .form-control:focus{
+        border-bottom: 1px solid $primary;
+    }
+ }
+
+/*form-switch-comp*/
+.form-switch-comp{
+    display: flex;
+}
 
 @media (max-width: 768px) {
     .cs_select {
@@ -274,4 +318,22 @@ textarea.form-control {
             padding:0px 12px;
         }        
     }
+
+    .input-bas-comp{
+        label{
+            font-size: 20px;
+            line-height: 22px;
+        }
+        .form-control{
+            font-size: 20px;
+            line-height: 22px;
+        }
+     }
+
+    .input-group-comp{
+        .form-control{
+            font-size: 20px;
+            line-height: 22px;
+        }
+     }
 }

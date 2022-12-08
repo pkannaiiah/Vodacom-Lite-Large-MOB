@@ -28,22 +28,22 @@
     font-display: swap;
 }
 //Fonts
-$rubik-regular:'VodafoneRg-Regular', Arial, Helvetica, sans-serif;
-$noto-regular:'VodafoneRg-Regular', Arial, Helvetica, sans-serif;
+$vodafonlt-light:'VodafoneLt-Regular', Arial, Helvetica, sans-serif;
+$vodafonrg-regular:'VodafoneRg-Regular', Arial, Helvetica, sans-serif;
 $rubik-bold:'VodafoneRg-Bold', Arial, Helvetica, sans-serif;
 $rubik-semibold:'VodafoneExB-Regular', Arial, Helvetica, sans-serif;
 
 //Colors
 $primary:#E60000;
-$secondary:#221E20;
+$secondary:#333333;
 $black: #000000;
-$light-black: #636363;
+$light-black: #CCCCCC;
 $dark-gray: #333333;
-$blue-gray: #666666;
+$fuldark-gray: #666666;
 $placeholder: #AAAAAA;
 $light-gray: #E0E0E0;
 $light-gray1: #EEEEEE;
-$border:#B3B3B3;
+$border:#CCCCCC;
 $disable:#DFDFE1;
 $white:#FFFFFF;
 $light: #F9F9F9;
@@ -52,19 +52,16 @@ $green-new: #008E73;
 $blue: #59C0ED;
 $orange: #FF9800;
 
-
 //Extends
-%rubik-regular {
-    font-family: $rubik-regular;
+%vodafonlg-light {
+    font-family: $vodafonlt-light;
+}
+%vodafonrg-regular {
+    font-family: $vodafonrg-regular;
 }
 
 %primary-font{
     font-family: $rubik-bold;
-}
-
-
-%noto-regular {
-    font-family: $noto-regular;
 }
 
 %primary-color {

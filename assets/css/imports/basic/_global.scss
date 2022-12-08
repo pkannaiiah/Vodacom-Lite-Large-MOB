@@ -8,7 +8,7 @@ body {
     @extend %white-bg;
     font-size: 16px;
     line-height: 0.5 !important;
-    font-family: $noto-regular;
+    font-family: $vodafonrg-regular;
     position: relative;
     @extend %secondary-color;
     line-height: 22px;
@@ -398,7 +398,7 @@ select:focus,
 }
 
 .secondfont {
-    @extend %noto-regular;
+    @extend %vodafonrg-regular;
 }
 
 hr {
@@ -457,7 +457,7 @@ hr {
     left: 0px !important;
 }
 .linedetails_img{
-    h5{font-family:$rubik-regular;}
+    h5{font-family:$vodafonrg-regular;}
   img{
     width: 50px;
     height: 50px;
@@ -714,7 +714,7 @@ text-overflow: ellipsis;
 /*15-11-22 ka st*/
 .row-label-comp{
     label{
-        font-family:$rubik-regular !important;
+        font-family:$vodafonrg-regular !important;
         display: flex !important;
         border:1px solid #ccc !important;
         img{text-align: left !important; z-index:0 !important;}

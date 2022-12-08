@@ -1,6 +1,6 @@
 //Buttons
 .custom_btn {
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
     border-radius: 6px;
     border: 1px solid;
@@ -8,6 +8,7 @@
     padding: 10px 20px;
     @extend %primary-font;
     height: 40px;
+    line-height:30px;
     display: inline-flex;
     text-decoration: none;
     justify-content: center;
@@ -15,7 +16,8 @@
     overflow: hidden;
     min-width: 100px;
     position: relative;
-    text-transform: uppercase;
+    //text-transform: uppercase;
+    letter-spacing: 1px;
     white-space: nowrap;
     &::after{
 	    transition: all 0.3s;
@@ -97,10 +99,10 @@
 
 .custom_btn_primary_outline{
     background: transparent;
-    border:1px solid $blue-gray !important;
+    border:1px solid $fuldark-gray !important;
     border-radius:6px;
     padding: 5px 13px;
-    color: $blue-gray;
+    color: $fuldark-gray;
     &:hover {
         background: transparent;
         border:1px solid $dark-gray !important;
@@ -160,4 +162,11 @@
     50% {
       transform: translate(5px, 0);
     }
+}
+
+@media (max-width: 768px) {
+    .custom_btn {
+        font-size: 20px;
+        line-height: 23px;
+    } 
 }

@@ -55,7 +55,7 @@ h5{
     font-size: 12px;
     margin-bottom: 8px;
     text-transform: uppercase;
-    color: $blue-gray;
+    color: $fuldark-gray;
 }
 .h1-heading{
     @extend %primary-font;
@@ -80,13 +80,13 @@ h5{
 }
 
 .section_title_light{
-    font-family: $noto-regular !important;
+    font-family: $vodafonrg-regular !important;
     font-size: 20px;
 }
 
 .support_text{
     font-size: 14px;
-    color: $blue-gray;
+    color: $fuldark-gray;
 }
 
 .error_msg{
@@ -104,13 +104,13 @@ h5{
 
 .numb-text{
     font-size:20px;
-    font-family:$rubik-regular;
+    font-family:$vodafonrg-regular;
     color:$dark-gray;
     line-height:22px;
     letter-spacing: 0.5;
 }
 .cont-heading{
-    font-family:$rubik-regular;
+    font-family:$vodafonrg-regular;
     font-size:24px;
     line-height:30px;
     color:$dark-gray;
@@ -118,7 +118,7 @@ h5{
 }
 @media (max-width: 992px) {
 .cont-heading{
-    font-family:$rubik-regular;
+    font-family:$vodafonrg-regular;
     font-size:20px;
     line-height:23px; 
     color:$dark-gray;
