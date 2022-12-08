@@ -283,6 +283,7 @@ textarea.form-control {
 
  .input-group-comp{
     span{
+        font-size:28px;
         background:transparent;
         border-top:0px;
         border-right:0px;
@@ -372,6 +373,7 @@ textarea.form-control {
      }
     .input-group-comp{
         .form-control{font-size: 20px; line-height: 22px;}
+        .form-control span{font-size: 20px; line-height: 22px;}
      }
      .dropdown-comp{
         width: 100%;
