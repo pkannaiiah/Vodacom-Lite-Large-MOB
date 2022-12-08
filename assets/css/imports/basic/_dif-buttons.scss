@@ -99,7 +99,7 @@
 .custom_btn_primary_outline{
     background: transparent;
     border:1px solid $fuldark-gray !important;
-    border-radius:6px;
+    border-radius: 6px;
     padding: 5px 13px;
     color: $fuldark-gray;
     &:hover {
@@ -150,6 +150,14 @@
             color: #DFDFE1;
         }
     }
+}
+
+.backbtn-comp{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+.back_btn{height: 30px; width: 65px; line-height: 17px;text-align: center;}
+label{font-family:$rubik-bold;font-size:24px; margin:0px;padding: 0px; line-height:30px;}
 }
 
 @keyframes slide1 {

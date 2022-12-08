@@ -82,6 +82,12 @@
         align-items: center;
         width: 100%;
         label{font-size:20px;line-height:21px;color:$white;margin:0px;padding:0px;}
+        .backarrow{
+            img{
+                height: 20px;
+                width: 20px;
+        }
+    }
     }
 }
 }

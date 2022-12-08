@@ -245,7 +245,7 @@ textarea.form-control {
         padding:0px 37px;
         .option-heding{
             background-color:$light-black;
-            color: #666666;
+            color: $fuldark-gray;
         }
         .option-cont{display: flex; justify-content: space-between;}
     }
@@ -261,7 +261,7 @@ textarea.form-control {
     top: -2px;
  }
 
- .input-bas-comp{    
+ .input-bas-comp{
     label{
         font-size: 28px;
         line-height: 30px;
@@ -276,10 +276,9 @@ textarea.form-control {
         border-left:0px;
         border-bottom: 1px solid $border;
         border-radius: 0px !important;
+        padding:0px;
     }
-    .form-control:focus{
-        border-bottom: 1px solid $primary;
-    }
+    .form-control:focus{border-bottom: 1px solid $primary;}
  }
 
  .input-group-comp{
@@ -314,17 +313,17 @@ textarea.form-control {
 
 .dropdown-comp{
     font-family: $vodafonlt-light;
-    width: 50%;
+    width: 70%;
     .list{display: flex; justify-content: space-between; padding:10px 25px;}
     .btn.show{
-        color: #666 !important;
+        color: $fuldark-gray !important;
         background-color:$white !important;
         border-color: $white !important;       
     }
     .btn-secondary{
         font-size:24px;
         line-height: 30px;
-        color: #666 !important;
+        color: $fuldark-gray !important;
         background-color:$white !important;
         border-color: $white !important;
         width:100%;
@@ -337,20 +336,11 @@ textarea.form-control {
         padding:0px;
     }
     .dropdown-item{
-        font-size: 24px;
-        line-height: 30px;
-        color: #666;
-        padding: 0px;
+        font-size: 24px;line-height: 30px;color:$fuldark-gray;padding: 0px;
     }
     .dropdown-item:active{ background-color: transparent !important;}
-    .dropdown-item.active{
-        font-family: $rubik-bold;
-        background-color: #CCCCCC !important;
-        padding:15px 25px;
-    }
-    .dropdown-item:hover{
-        color: #666;
-    }
+    .dropdown-item.active{font-family: $rubik-bold;background-color: #CCCCCC !important;padding:15px 25px;}
+    .dropdown-item:hover{color:$fuldark-gray;}
     .check-icon{
         align-items: center;
         padding:10px 25px;
@@ -362,41 +352,30 @@ textarea.form-control {
         img{width:24px; height:24px;cursor: pointer;}
     }
 }
+.drop-down-bg{
+    background: rgba(0, 0, 0, 0.26);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    position:absolute;
+    top: 0px;
+}
 
 
 @media (max-width: 768px) {
     .cs_select {
-        .form-select {
-            padding:0px 12px;
-        }        
+        .form-select {padding:0px 12px;}        
     }
-
     .input-bas-comp{
-        label{
-            font-size: 20px;
-            line-height: 22px;
-        }
-        .form-control{
-            font-size: 20px;
-            line-height: 22px;
-        }
+        label{font-size: 20px; line-height: 22px;}
+        .form-control{font-size: 20px; line-height: 22px;}
      }
-
     .input-group-comp{
-        .form-control{
-            font-size: 20px;
-            line-height: 22px;
-        }
+        .form-control{font-size: 20px; line-height: 22px;}
      }
      .dropdown-comp{
         width: 100%;
-        .btn-secondary{
-            font-size:20px;
-            line-height: 23px;
-        }
-        .dropdown-item{
-            font-size: 20px;
-            line-height: 23px;
-        }
+        .btn-secondary{font-size:20px; line-height: 23px;}
+        .dropdown-item{font-size: 20px; line-height: 23px;}
     }
 }

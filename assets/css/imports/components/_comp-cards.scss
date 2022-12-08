@@ -55,3 +55,13 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    .card-comp001{
+        .card{
+            .card-insec{
+                img{width:40px; height:35px;margin:23px 10px 23px 10px;;}
+            }
+        }
+    }
+}
