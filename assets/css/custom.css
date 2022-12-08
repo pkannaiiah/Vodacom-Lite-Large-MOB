@@ -26,7 +26,7 @@
   font-style: normal;
   font-display: swap;
 }
-.balance_section_info label, .usage_box .usage_value, .profile_info_v1 .profile_info_v1_desc h4, .profile_info_v1 .profile_info_v1_desc h3, .profile_info_desc h1, .primary_12, .primary1_14, .primary1_16, .primary_18, .section_title, .primary_14, .primary_16, .h1-heading, .control-label, .primary-font, .hyperlink, .custom_btn {
+.primary_12, .primary1_14, .primary1_16, .primary_18, .section_title, .primary_14, .primary_16, .h1-heading, .control-label, .primary-font, .hyperlink, .custom_btn {
   font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
 }
 
@@ -38,7 +38,7 @@
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
 }
 
-.quicklink_list .quicklink_item:hover p, .link_style_menu li .link_style_item:hover, .footer_menu .footer_menu_item.active span, .primary_color, .error_msg, .hyperlink:hover, .hyperlink {
+.footer_menu .footer_menu_item.active span, .primary_color, .error_msg, .hyperlink:hover, .hyperlink {
   color: #E60000;
 }
 
@@ -54,7 +54,7 @@ a:hover, a, body, .secondary_color, .gray_link_card_info h4 {
   background: #E60000;
 }
 
-.right_side_modal .modal_fixed_footer .fixed_footer_container, .right_side_modal .modal-dialog .modal-content, .full_modal .modal-dialog .modal-content, .bottom_modal .modal-dialog .modal-content, .custom_modal .modal-dialog .modal-content, .quicklink_list .quicklink_item .quicklink_item_img, .app_alert_card, .footer_menu .fixed_footer_container, .fixed_footer .fixed_footer_container, body, .custom_checkbox + label::before, .custom_radio + label::before, .form-control:focus, .form-control, .white_bg {
+.right_side_modal .modal_fixed_footer .fixed_footer_container, .right_side_modal .modal-dialog .modal-content, .full_modal .modal-dialog .modal-content, .bottom_modal .modal-dialog .modal-content, .custom_modal .modal-dialog .modal-content, .footer_menu .fixed_footer_container, .fixed_footer .fixed_footer_container, body, .custom_checkbox + label::before, .custom_radio + label::before, .form-control:focus, .form-control, .white_bg {
   background: #FFFFFF;
 }
 
@@ -64,7 +64,7 @@ a:hover, a, body, .secondary_color, .gray_link_card_info h4 {
   justify-content: space-between;
 }
 
-.quicklink_list .quicklink_item .quicklink_item_img, .quicklink_list .quicklink_item, .footer_menu .footer_menu_item, .flex_grp_center, .gray_link_card {
+.footer_menu .footer_menu_item, .flex_grp_center, .gray_link_card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@ a:hover, a, body, .secondary_color, .gray_link_card_info h4 {
   justify-content: center;
 }
 
-.profile_info_v1, .profile_info, .footer_menu .fixed_footer_container, .flex_grp_align_center {
+.footer_menu .fixed_footer_container, .flex_grp_align_center {
   display: flex;
   align-items: center;
 }
@@ -111,9 +111,9 @@ input[type=number] {
 
 /*ka-end*/
 .custom_btn {
-  font-size: 14px;
+  font-size: 20px;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 6px;
   border: 1px solid;
   text-align: center;
   padding: 10px 20px;
@@ -196,7 +196,7 @@ input[type=number] {
 .custom_btn_primary_outline {
   background: transparent;
   border: 1px solid #666666 !important;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 5px 13px;
   color: #666666;
 }
@@ -275,7 +275,7 @@ input[type=number] {
 
 .gray_link_card {
   background: #F5F5F5;
-  border-radius: 13px;
+  border-radius: 6px;
   padding: 15px;
 }
 .gray_link_card_img {
@@ -299,7 +299,7 @@ input[type=number] {
 }
 .btn_trigger:before {
   background-color: #f5f5f5;
-  border-radius: 50%;
+  border-radius: 6px;
   content: "";
   height: 20px;
   left: 50%;
@@ -322,7 +322,7 @@ input[type=number] {
   width: 22px;
   height: 22px;
   background: #F8F8F8;
-  border-radius: 30px;
+  border-radius: 6px;
   border: 0px;
 }
 .usage_more_btn img {
@@ -532,6 +532,10 @@ h5 {
   background-size: 40px;
 }
 
+.border-rad20 {
+  border-radius: 20px;
+}
+
 ::-moz-placeholder {
   color: #AAAAAA;
   opacity: 1;
@@ -733,6 +737,10 @@ textarea.form-control {
   top: -2px;
 }
 
+.input-bas-comp {
+  border: 1px solid #666666;
+}
+
 @media (max-width: 768px) {
   .cs_select .form-select {
     padding: 0px 12px;
@@ -828,6 +836,10 @@ select:focus,
 
 .mt-45 {
   margin-top: 45px;
+}
+
+.mt-65 {
+  margin-top: 65px;
 }
 
 .mt-160 {
@@ -1704,6 +1716,7 @@ hr {
 }
 .card-comp001 .card .card-insec {
   display: flex;
+  align-items: center;
 }
 .card-comp001 .card .card-insec img {
   width: 62px;
@@ -1760,371 +1773,6 @@ hr {
     color: #333333;
     letter-spacing: 0.5px;
   }
-}
-.link_style_menu li .link_style_item {
-  padding: 20px 10px;
-  font-size: 16px;
-  border-bottom: 1px solid #E0E0E0;
-}
-.link_style_menu li .link_style_item .left_icon {
-  width: 40px;
-  margin-right: 14px;
-}
-.link_style_menu li .link_style_item .right_arrow {
-  width: 16px;
-}
-.link_style_menu li:last-child .link_style_item {
-  border-bottom: 0px;
-}
-
-.profile_info_img {
-  margin-right: 15px;
-}
-.profile_info_img img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
-.profile_info_desc {
-  flex: 1;
-}
-.profile_info_desc h1 {
-  font-size: 28px;
-  margin-bottom: 0px;
-  margin-top: 6px;
-  max-width: 190px;
-}
-.profile_info .event_img {
-  margin-left: 15px;
-  align-items: center;
-}
-.profile_info .event_img img {
-  width: 40px;
-}
-.profile_info .event_img label {
-  line-height: 24px;
-}
-.profile_info .event_img .custom_checkbox + label::before {
-  left: -20px !important;
-}
-.profile_info .event_img .cs_checkbox_grp, .profile_info .event_img .cs_radio_grp {
-  padding-left: 25px;
-}
-.profile_info .event_img .custom_checkbox:checked + label::after {
-  left: -13px !important;
-}
-
-.account_list {
-  padding-left: 0px;
-}
-.account_list li {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.profile_info_v1 .profile_info_v1_img {
-  margin-right: 10px;
-}
-.profile_info_v1 .profile_info_v1_img img {
-  width: 36px;
-  height: 36px;
-  border-radius: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
-.profile_info_v1 .profile_info_v1_desc {
-  flex: 1;
-}
-.profile_info_v1 .profile_info_v1_desc h3 {
-  font-size: 18px;
-  margin-bottom: 0px;
-  margin-right: 8px;
-}
-.profile_info_v1 .profile_info_v1_desc h4 {
-  font-size: 12px;
-  margin-bottom: 0px;
-  margin-right: 8px;
-}
-.profile_info_v1 .profile_info_v1_desc p {
-  font-size: 12px;
-  color: #333333;
-  margin-bottom: 0px;
-}
-
-.dflexcolmr {
-  display: flex;
-  justify-content: right;
-}
-.dflexcolmr label {
-  line-height: 24px;
-}
-.dflexcolmr .custom_checkbox + label::before {
-  left: -20px !important;
-}
-.dflexcolmr .cs_checkbox_grp, .dflexcolmr .cs_radio_grp {
-  padding-left: 25px;
-}
-.dflexcolmr .custom_checkbox:checked + label::after {
-  left: -13px !important;
-}
-
-.app_alerts_wrap {
-  min-height: 132px;
-  margin-bottom: 20px;
-  position: relative;
-  transition: all 0.5s ease-out;
-}
-.app_alerts_wrap.no_alerts {
-  min-height: auto;
-  margin-bottom: 30px;
-  transition: all 0.5s ease-out;
-}
-.app_alerts_wrap .app_alerts_list {
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card {
-  width: 98%;
-  left: 7px;
-  top: 7px;
-  transition: all 0.5s ease-out;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(1) {
-  z-index: 10;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(2) {
-  z-index: 9;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(3) {
-  z-index: 8;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(4) {
-  z-index: 7;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(5) {
-  z-index: 6;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(6) {
-  z-index: 5;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(7) {
-  z-index: 4;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(8) {
-  z-index: 3;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(9) {
-  z-index: 2;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:nth-child(10) {
-  z-index: 1;
-}
-.app_alerts_wrap .app_alerts_list .app_alert_card:first-child {
-  left: 0px;
-  top: 0px;
-}
-.app_alerts_wrap .app_alerts_list.one_child .app_alert_card {
-  width: 100%;
-  transition: all 0.5s ease-out;
-}
-
-.app_alert_card {
-  border-radius: 10px;
-  width: 100%;
-  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.15);
-  padding: 15px 12px 12px 12px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-}
-.app_alert_card button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-.app_alert_card .app_alert_title {
-  font-size: 15px;
-  margin-bottom: 12px;
-  padding-right: 40px;
-}
-.app_alert_card .app_alert_desc {
-  font-size: 14px;
-  margin-bottom: 12px;
-  max-height: 43px;
-  min-height: 43px;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  display: -webkit-box;
-  max-width: 100%;
-}
-
-.dashboard_card {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.dashboard_card .balance_section {
-  padding-top: 15px;
-  border-top: 1px solid #EEEEEE;
-}
-
-.dashboard_account {
-  padding-bottom: 15px;
-  margin-bottom: 18px;
-  border-bottom: 1px solid #EEEEEE;
-  flex: 1;
-}
-.dashboard_account_info .mobile_number {
-  font-size: 20px;
-  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  margin-bottom: 4px;
-  max-width: 150px;
-}
-.dashboard_account_info .pack_name {
-  margin-right: 4px;
-  max-height: 34px;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  display: -webkit-box;
-  max-width: 100%;
-}
-.dashboard_account_info .duration {
-  font-size: 12px;
-  color: #666666;
-}
-
-.dashboard_usage {
-  margin: 0px -8px 0px -8px;
-}
-.dashboard_usage .usage_list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-height: 112px;
-  overflow: hidden;
-  transition: all 0.5s ease-out;
-}
-.dashboard_usage .usage_list.expand {
-  max-height: 100%;
-  overflow: auto;
-  transition: all 0.5s ease-out;
-}
-.dashboard_usage .usage_list .usage_box {
-  width: 25%;
-  padding: 0px 10px;
-  margin-bottom: 16px;
-}
-
-.usage_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.usage_box .usage_box_slider {
-  margin-bottom: 10px;
-}
-.usage_box .usage_box_slider > img {
-  width: 100%;
-  max-width: 60px;
-}
-.usage_box .usage_value {
-  font-size: 13px;
-  margin: 0px auto;
-  text-align: center;
-  max-width: 70px;
-}
-.usage_box .usage_value img {
-  height: 11px;
-}
-.usage_box .usage_label {
-  font-size: 12px;
-  color: #333333;
-  text-align: center;
-  max-height: 36px;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  display: -webkit-box;
-  max-width: 100%;
-}
-
-.balance_section_info label {
-  text-transform: uppercase;
-  font-size: 13px;
-  margin-bottom: 4px;
-}
-.balance_section_info .balance {
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 0px;
-}
-.balance_section_info .balance_lg {
-  font-size: 24px;
-  line-height: 30px;
-  margin-bottom: 0px;
-}
-.balance_section_action {
-  align-self: flex-end;
-}
-
-.quicklink_card {
-  padding: 16px 5px 0px 5px;
-  margin-bottom: 20px;
-}
-
-.quicklink_list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  cursor: pointer;
-  padding-left: 0px;
-}
-.quicklink_list .quicklink_item {
-  width: 25%;
-  margin-bottom: 20px;
-  padding: 0px 14px;
-  flex-direction: column;
-}
-.quicklink_list .quicklink_item .quicklink_item_img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50px;
-  border: 1px solid #CECECE;
-  padding: 5px;
-  margin-bottom: 5px;
-}
-.quicklink_list .quicklink_item .quicklink_item_img img {
-  width: 24px;
-}
-.quicklink_list .quicklink_item p {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-.quicklink_list .quicklink_item:hover .quicklink_item_img {
-  background: #F9F9F9;
 }
 .custom_modal .modal-dialog {
   max-width: 400px;

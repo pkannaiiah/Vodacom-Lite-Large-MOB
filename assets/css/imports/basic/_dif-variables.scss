@@ -6,7 +6,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'VodafoneRg-Regular';
     src: url('fonts/VodafoneRg-Regular.woff') format('woff');
@@ -14,7 +13,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'VodafoneExB-Regular';
     src: url('fonts/VodafoneExB-Regular.woff') format('woff');
@@ -22,7 +20,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'VodafoneRg-Bold';
     src: url('fonts/VodafoneRg-Bold.woff') format('woff');
@@ -33,7 +30,6 @@
 //Fonts
 $rubik-regular:'VodafoneRg-Regular', Arial, Helvetica, sans-serif;
 $noto-regular:'VodafoneRg-Regular', Arial, Helvetica, sans-serif;
-$noto-light:'VodafoneLt-Regular', Arial, Helvetica, sans-serif;
 $rubik-bold:'VodafoneRg-Bold', Arial, Helvetica, sans-serif;
 $rubik-semibold:'VodafoneExB-Regular', Arial, Helvetica, sans-serif;
 
@@ -66,9 +62,6 @@ $orange: #FF9800;
     font-family: $rubik-bold;
 }
 
-%noto-light {
-    font-family: $noto-light;
-}
 
 %noto-regular {
     font-family: $noto-regular;

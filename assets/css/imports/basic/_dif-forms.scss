@@ -28,6 +28,10 @@
     }
 }
 
+.border-rad20{
+    border-radius:20px;
+ }
+
 //Placeholder
 ::placeholder {
     color: $placeholder;
@@ -257,6 +261,12 @@ textarea.form-control {
     left: -15px;
     top: -2px;
  }
+
+
+ .input-bas-comp{
+    border: 1px solid #666666;
+ }
+
 
 @media (max-width: 768px) {
     .cs_select {
