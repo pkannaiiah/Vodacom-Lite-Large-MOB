@@ -312,6 +312,54 @@ textarea.form-control {
     display: flex;
 }
 
+.dropdown-comp{
+    width: 50%;
+    .list{display: flex; justify-content: space-between; padding:10px 25px;}
+    .btn.show{
+        color: #666 !important;
+        background-color:$white !important;
+        border-color: $white !important;       
+    }
+    .btn-secondary{
+        font-size:24px;
+        color: #666 !important;
+        background-color:$white !important;
+        border-color: $white !important;
+        width:100%;
+    }
+    .dropdown-menu-dark{
+        background:$white !important;
+        width:100%;
+        border-radius:6px;
+        padding:0px;
+    }
+    .dropdown-item{
+        font-size: 24px;
+        color: #666;
+        padding: 0px;
+    }
+    .dropdown-item:active{ background-color: transparent !important;}
+    .dropdown-item.active{
+        font-family: $rubik-bold;
+        background-color: #CCCCCC !important;
+        padding:15px 25px;
+    }
+    .dropdown-item:hover{
+        color: #666;
+    }
+    .check-icon{
+        align-items: center;
+        padding:10px 25px;
+        img{height:31px; width:31px;}
+    }
+    .delete-icon{
+        padding:10px 35px;
+        align-items: center;
+        img{width:24px; height:24px;cursor: pointer;}
+    }
+}
+
+
 @media (max-width: 768px) {
     .cs_select {
         .form-select {
