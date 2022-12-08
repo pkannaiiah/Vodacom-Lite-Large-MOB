@@ -69,7 +69,7 @@
               <!--mobile header-->
         <div class="mobile-header-comp2">
             <div class="moble-header">
-            <div>
+            <div class="backarrow">
                 <a href="">
                     <img src="assets/images/back-arrow.svg" alt="" title="" />
                 </a>
@@ -88,33 +88,53 @@
 
     </header>
 
-    <section class="app_main_wrapper mt-65 mt-res-25">    
+    <section class="app_main_wrapper mt-minhed mt-res-45">    
 
                 <div class="vse_sm">
-
-                        <div class="mb-4 mt-2 res-display-none">
-                            <a href="" class="custom_btn_primary_outline border-rad20">
-                                Back
-                            </a>
-                        </div>
+                  
+                  <div class="mb-4 mt-2 res-display-none backbtn-comp">
+                    <a href="" class="custom_btn_primary_outline border-rad20 back_btn"> Back </a>
+                    <label> Buy for 058 777 777 </label>
+                </div>
 
                       <div class="mb-4 pt-2">
-                        <div class="cont-heading mb-3"> Who are you buying for? </div>                        
-                        <div class="dropdown cs_select">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>058 345 678, (Myself) </option>
-                                <option>Insert another number</option>
-                                <option class="option-heding">Insert another number</option>
-                                <option value="1" class="option-cont">
-                                        Insert another number
-                                        <a href="">
-                                        <img src="assets/images/data-icon.svg" alt="" title="" />
-                                    </a>                                   
-                                </option>
-                                <option value="2">058 345 678, (Myself)</option>
-                                <option value="3">058 345 678, (Myself)</option>
-                              </select>
+                        <div class="cont-heading mb-3"> Who are you buying for? </div>
+                        <div class="dropdown dropdown-comp mb-2">
+                          <button class="btn btn-secondary dropdown-toggle text-left" type="button" data-bs-toggle="dropdown" data-bs-target="#exampleModal" aria-expanded="false">
+                              058 345 678, (Myself)
+                          </button>
+                       
+                          <ul class="dropdown-menu dropdown-menu-dark dropdown fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <!--div class="drop-down-bg"></div-->
+                              <li class="check-icon list">
+                                  <a class="dropdown-item" href="#">058 345 678, (Myself) </a>
+                                  <img src="assets/images/tick-vector.svg" alt="" title="" />
+                              </li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="list">
+                                  <a class="dropdown-item" href="#">Insert another number </a>
+                              </li>
+                            <li class="mt-2 mb-2">
+                              <a class="dropdown-item active" href="#">Recent numbers:</a>
+                          </li>
+                            <li class="list delete-icon">
+                              <a class="dropdown-item" href="#">058 444 444 </a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="list delete-icon">
+                              <a class="dropdown-item" href="#">058 333 333</a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                          <li><hr class="dropdown-divider"></li>
+                            <li class="list d-flex justify-content-between delete-icon">
+                              <a class="dropdown-item" href="#">058 555 555</a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                          </ul>
                         </div>
+
+
                     </div>
 
                     <div class="mt-3">

@@ -47,6 +47,7 @@ select:focus,
 .flex_grp_center {
     @extend %flex_grp_center;
 }
+.text-left{text-align: left !important}
 
 .flex_grp_align_center {
     @extend %flex_grp_align_center;
@@ -67,7 +68,6 @@ select:focus,
 .flex_grp_end {
     @extend %flex_grp_end;
 }
-
 
 .vse_sm{
     padding:33px;height: 100vh;
@@ -119,8 +119,8 @@ select:focus,
 .mt-45 {
     margin-top: 45px;
 }
-.mt-65 {
-    margin-top: 65px;
+.mt-minhed {
+    margin-top: 60px;
 }
 
 
@@ -166,10 +166,8 @@ select:focus,
 .app_main_wrapper {
     max-width: 768px;
     //margin: 0px auto;
-    min-height: 100vh;
-    position: relative;
-    border-left: 1px solid #EFF3F4;
-    border-right: 1px solid #EFF3F4;
+    //min-height: 100vh;
+    height: calc(100vh - 80px);
 }
 
 .post_login {
@@ -726,21 +724,24 @@ text-overflow: ellipsis;
     }
 }
 
+<<<<<<< HEAD
+=======
+@media (min-width: 1024px) {
+.mt-minhed {margin-top: 60px;}
+}
+>>>>>>> 07baaa8a135b3a8943c45f17a4902a87404e5edf
 
 @media (min-width: 768px) {
     .header .header_left {
         left: 16px !important;
     }
-
     .header .header_actions {
         right: 16px !important;
     }
-
     .header .header_container,
     .app_main_wrapper {
         max-width: 768px !important;
     }
-
     .side_menu_wrapper {
         width: 700px !important;
     }
@@ -752,6 +753,7 @@ text-overflow: ellipsis;
         line-height: 0.5 !important;
         line-height: 16px;
     }
+<<<<<<< HEAD
     .vse_lg {
         padding: 0px 25px;
     }
@@ -774,11 +776,18 @@ text-overflow: ellipsis;
     .res-display-none{
         display: none !important;
     }
+=======
+    .vse_lg {padding: 0px 25px;}
+    .vse_md {padding: 0px 20px;}
+    .vse_sm {padding: 20px;height: calc(100vh - 0px);margin-top:50px;}
+    .app_main_wrapper {border-left: 0px;border-right: 0px;}
+    .mt-res-25 {margin-top: 25px !important;}
+    .res-display-none{display: none !important;}
+>>>>>>> 07baaa8a135b3a8943c45f17a4902a87404e5edf
 }
 
 @media (max-height: 680px) {
-    .mt-160 {
-        margin-top: 100px;
-    }
+    .mt-160 {margin-top: 100px;}
     .modal-dialog{max-width:none !important;}
+    .mt-res-45 {margin-top: 45px !important;}
 }
