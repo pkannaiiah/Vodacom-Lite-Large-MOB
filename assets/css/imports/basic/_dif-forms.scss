@@ -1,0 +1,267 @@
+//Forms
+.form-control {
+    font-size: 16px;
+    border-radius: 4px;
+    @extend %white-bg;
+    border:.5px solid $blue-gray;
+    height: 46px;
+    padding: 10px 16px;
+    @extend %noto-regular;
+    position: relative;
+    &:focus {
+        border-color: $blue-gray;
+        @extend %white-bg;
+    }
+    &:disabled,
+    &.disabled,
+    &[readonly] {
+        background: $light;
+        color: $dark-gray;
+        border-color:$dark-gray ;
+    }
+    &.error{
+        border-color: $primary;
+        background-image: url(../images/error_red.svg);
+        background-repeat: no-repeat;
+        background-position: 98% center;
+        background-size: 40px;
+    }
+}
+
+//Placeholder
+::placeholder {
+    color: $placeholder;
+    opacity: 1;
+    @extend %noto-regular;
+}
+
+::-webkit-input-placeholder {
+    color: $placeholder;
+    @extend %noto-regular;
+}
+
+::-moz-placeholder {
+    color: $placeholder;
+    @extend %noto-regular;
+}
+
+:-ms-input-placeholder {
+    color: $placeholder;
+    @extend %noto-regular;
+}
+
+:-moz-placeholder {
+    color: $placeholder;
+    @extend %noto-regular;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input_icon {
+    position: relative;
+    button {
+        position: absolute;
+        box-shadow: none;
+        border: none;
+        background: none;
+        img {
+            width: 40px;
+        }
+    }
+    &.left-icon {
+        .form-control {
+            padding-left: 40px;
+        }
+        button {
+            top: 50%;
+            transform: translateY(-50%);
+            left: 8px;
+        }
+    }
+    &.right-icon {
+        .form-control {
+            padding-right: 40px;
+            &.error{
+                background-image: none;
+            }
+        }
+        button {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 8px;
+        }
+    }
+    &.left-right-icon {
+        .form-control {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .left-icon {
+            left: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .right-icon {
+            top: 5px;
+            right: 12px;
+        }
+    }
+}
+
+//Checkbox & Radios
+.cs_checkbox_grp,.cs_radio_grp{
+    padding-left: 36px;
+}
+.custom_radio,
+.custom_checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.custom_radio{
+    + label{
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 0px;
+        font-size: 14px;
+        position: relative;
+        @extend %noto-regular;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-radius: 30px;
+            @extend %white-bg;
+            border: 1px solid $border;
+            top: 0px;
+            left: -36px;
+        }
+    }
+    &:disabled{
+        + label{
+            color: $placeholder;
+            &::before{
+                background: $light;
+            }
+        }
+        &:focus{
+            border-color: $border;
+            box-shadow: none;
+        }
+    }
+    &:checked{
+        + label{
+            &::before{
+                border: 6px solid $primary;
+            }
+        }
+        &:disabled{
+            + label{
+                color: $placeholder;
+                &::before{
+                    @extend %primary-bg;
+                }
+            }
+        }
+    }
+}
+
+.custom_checkbox{
+    + label{
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 0px;
+        position: relative;
+        font-size: 14px;
+        @extend %noto-regular;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: -36px;
+            width: 24px;
+            height: 24px;
+            border-radius: 30px;
+            @extend %white-bg;
+            border: 1px solid $border;
+        }
+    }
+    &:disabled{
+        + label{
+            color: $placeholder;
+            &::before{
+                background: $light;
+            }
+        }
+        &:focus{
+            border-color: $border;
+            box-shadow: none;
+        }
+    }
+    &:checked{
+        + label{
+            &::before{
+                @extend %primary-bg;
+                border: 1px solid $primary;
+            }
+            &::after{
+                content: url(../images/check_white.svg);
+                position: absolute;
+                left: -29px;
+                top: 0px;
+            }
+        }
+        &:disabled{
+            + label{
+                color: $placeholder;
+                &::before{
+                    @extend %primary-bg;
+                }
+            }
+        }
+    }
+}
+
+textarea.form-control {
+    height: 8em;
+    min-height: auto;
+    resize: none;
+}
+
+.cs_select {
+    position: relative;
+    .form-select {
+        box-shadow: 0 2px 4px 0px rgb(64 60 67 / 5%);
+        border:0px;
+        height:49px;
+        padding:0px 37px;
+        .option-heding{
+            background-color:#CCCCCC;
+            color: #666666;
+        }
+        .option-cont{display: flex; justify-content: space-between;}
+    }
+}
+
+.custom_checkbox + label::before {
+    left:-20px!important; width:20px!important; height:20px!important;
+ }
+ .custom_checkbox:checked + label::after {
+    content: url(../images/check_white.svg);
+    position: absolute;
+    left: -15px;
+    top: -2px;
+ }
+
+@media (max-width: 768px) {
+    .cs_select {
+        .form-select {
+            padding:0px 12px;
+        }        
+    }
+}

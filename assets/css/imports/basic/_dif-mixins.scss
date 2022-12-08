@@ -1,0 +1,90 @@
+// GLOBAL MIXINS
+@mixin white_card($padding) {
+    padding: $padding;
+    border-radius: 24px;
+    @extend %white-bg;
+    box-shadow: 0 8px 63px 0 rgba(0, 0, 0, .08);
+}
+  
+@mixin ellipsis($ellipsis) {
+    -webkit-line-clamp: $ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+}
+
+@mixin heding-h1($heding-h1) {
+    font-size: 50px;
+    font-family: $rubik-regular;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+@mixin heding-h2($heding-h2) {
+    font-size: 28px;
+    font-family: $rubik-regular;
+    letter-spacing: 1.5px;
+    line-height: 34px;
+}
+
+@mixin heding-h3($heding-h3) {
+    font-size: 24px;
+    font-family: $rubik-regular;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+@mixin heding-h4($heding-h4) {
+    font-size: 20px;
+    font-family: $rubik-regular;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+@mixin heding-h5($heding-h5) {
+    font-size: 18px;
+    font-family: $rubik-regular;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+@media (max-width: 767px) {
+
+    @mixin heding-h1($heding-h1) {
+        font-size: 28px;
+        font-family: $noto-light;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+    }
+    
+    @mixin heding-h2($heding-h2) {
+        font-size: 22px;
+        font-family: $noto-light;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+    }
+    
+    @mixin heding-h3($heding-h3) {
+        font-size: 20px;
+        font-family: $noto-light;
+        letter-spacing: 0.5px;
+        line-height: 22px;
+    }
+    
+    @mixin heding-h4($heding-h4) {
+        font-size: 18px;
+        font-family: $noto-light;
+        letter-spacing: 0.5px;
+        line-height: 20px;
+    }
+    
+    @mixin heding-h5($heding-h5) {
+        font-size: 16px;
+        font-family: $noto-light;
+        letter-spacing: 0.5px;
+        line-height: 18px;
+    } 
+}

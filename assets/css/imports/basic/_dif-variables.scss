@@ -1,0 +1,145 @@
+// GLOBAL VARIABLES
+@font-face {
+    font-family: 'VodafoneLt-Regular';
+    src: url('fonts/VodafoneLt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VodafoneRg-Regular';
+    src: url('fonts/VodafoneRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VodafoneExB-Regular';
+    src: url('fonts/VodafoneExB-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VodafoneRg-Bold';
+    src: url('fonts/VodafoneRg-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+//Fonts
+$rubik-regular:'VodafoneRg-Regular', Arial, Helvetica, sans-serif;
+$noto-regular:'VodafoneRg-Regular', Arial, Helvetica, sans-serif;
+$noto-light:'VodafoneLt-Regular', Arial, Helvetica, sans-serif;
+$rubik-bold:'VodafoneRg-Bold', Arial, Helvetica, sans-serif;
+$rubik-semibold:'VodafoneExB-Regular', Arial, Helvetica, sans-serif;
+
+//Colors
+$primary:#E60000;
+$secondary:#221E20;
+$black: #000000;
+$light-black: #636363;
+$dark-gray: #333333;
+$blue-gray: #666666;
+$placeholder: #AAAAAA;
+$light-gray: #E0E0E0;
+$light-gray1: #EEEEEE;
+$border:#B3B3B3;
+$disable:#DFDFE1;
+$white:#FFFFFF;
+$light: #F9F9F9;
+$green: #99CC00;
+$green-new: #008E73;
+$blue: #59C0ED;
+$orange: #FF9800;
+
+
+//Extends
+%rubik-regular {
+    font-family: $rubik-regular;
+}
+
+%primary-font{
+    font-family: $rubik-bold;
+}
+
+%noto-light {
+    font-family: $noto-light;
+}
+
+%noto-regular {
+    font-family: $noto-regular;
+}
+
+%primary-color {
+    color: $primary;
+}
+
+%secondary-color {
+    color: $secondary;
+}
+
+%white-color {
+    color: $white;
+}
+
+%primary-bg {
+    background: $primary;
+}
+
+%white-bg {
+    background: $white;
+}
+
+%flex_grp_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%flex_grp_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%inflex_grp_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flex_grp_align_center {
+    display: flex;
+    align-items: center;
+}
+
+%flex_grp_align_start {
+    display: flex;
+    align-items: flex-start;
+}
+
+%inflex_grp_align_center {
+    display: inline-flex;
+    align-items: center;
+}
+
+/*ka-st*/
+%flex_grp_end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/*input text arrows*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+/*ka-end*/

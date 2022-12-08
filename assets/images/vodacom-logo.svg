@@ -1,0 +1,8 @@
+<svg id="Group_6" data-name="Group 6" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="White_on_red" data-name="White on red">
+    <g id="Global_header" data-name="Global header">
+      <path id="Fill_1" data-name="Fill 1" d="M44,22A22,22,0,1,1,22,0,22,22,0,0,1,44,22" fill="#e60000"/>
+      <path id="Fill_2" data-name="Fill 2" d="M12.35,32.45C6.311,32.47.028,27.292,0,18.976A18.773,18.773,0,0,1,6.71,5.044,21.892,21.892,0,0,1,20.01,0a5.511,5.511,0,0,1,1.582.175,9.161,9.161,0,0,0-7.169,8.816,2.32,2.32,0,0,0,.027.36c6.693,1.638,9.732,5.7,9.75,11.309A11.791,11.791,0,0,1,12.35,32.45" transform="translate(9.9 2.2)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
