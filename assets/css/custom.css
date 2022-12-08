@@ -130,7 +130,6 @@ input[type=number] {
   overflow: hidden;
   min-width: 100px;
   position: relative;
-  letter-spacing: 1px;
   white-space: nowrap;
 }
 .custom_btn::after {
