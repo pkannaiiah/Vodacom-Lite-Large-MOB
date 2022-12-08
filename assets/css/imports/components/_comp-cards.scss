@@ -27,6 +27,35 @@
     }
 }
 
+
+.card-bundles {
+        .card{
+            border-radius:9px !important;
+            box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
+            border:0px;
+            cursor: pointer;
+            .card-insec{
+                display: flex;
+                align-items: center;
+            img{width:62px; height:72px;margin:34px 20px 34px 34px;}
+            .card-body{
+                flex: 0 0 auto;
+                padding: 0px;
+                text-align: center;
+                margin-top: 10px;
+                .card-title{
+                    font-family:$vodafonrg-regular;
+                    font-size:24px;
+                    line-height:26px;
+                    color:$dark-gray;
+                    letter-spacing:1.2px;
+                    @include ellipsis(2);
+                }
+            }
+        }
+        }
+    }
+
 @media (max-width: 992px) {
     .card-comp001{
         display:-webkit-box;
