@@ -258,7 +258,7 @@ input[type=number] {
 .backbtn-comp .back_btn {
   height: 30px;
   width: 65px;
-  line-height: 17px;
+  line-height: 19px;
   text-align: center;
 }
 .backbtn-comp label {
@@ -2223,13 +2223,6 @@ hr {
     font-size: 16px;
   }
 }
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 :root {
   --clr: #EBEBEB;
   --clrlg: #333333;
