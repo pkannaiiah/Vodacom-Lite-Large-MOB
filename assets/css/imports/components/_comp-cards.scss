@@ -1,86 +1,151 @@
 //Cards Css
-.card-comp001{
-    .card{
-        border-radius:9px !important;
+.card-comp001 {
+    .card {
+        border-radius: 9px !important;
         box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
-        border:0px;
+        border: 0px;
         cursor: pointer;
-        .card-insec{
+
+        .card-insec {
             display: flex;
             align-items: center;
-        img{width:62px; height:72px;margin:34px 20px 34px 34px;}
-        .card-body{
-            flex: 0 0 auto;
-            padding: 0px;
-            text-align: center;
-            margin-top: 10px;
-            .card-title{
-                font-family:$vodafonrg-regular;
-                font-size:24px;
-                line-height:26px;
-                color:$dark-gray;
-                letter-spacing:1.2px;
-                @include ellipsis(2);
+
+            img {
+                width: 62px;
+                height: 72px;
+                margin: 34px 20px 34px 34px;
             }
-        }
-    }
-    }
-}
 
-
-.card-bundles {
-        .card{
-            border-radius:9px !important;
-            box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
-            border:0px;
-            cursor: pointer;
-            .card-insec{
-                display: flex;
-                align-items: center;
-            img{width:62px; height:72px;margin:34px 20px 34px 34px;}
-            .card-body{
+            .card-body {
                 flex: 0 0 auto;
                 padding: 0px;
                 text-align: center;
                 margin-top: 10px;
-                .card-title{
-                    font-family:$vodafonrg-regular;
-                    font-size:24px;
-                    line-height:26px;
-                    color:$dark-gray;
-                    letter-spacing:1.2px;
+
+                .card-title {
+                    font-family: $vodafonrg-regular;
+                    font-size: 24px;
+                    line-height: 26px;
+                    color: $dark-gray;
+                    letter-spacing: 1.2px;
                     @include ellipsis(2);
                 }
             }
         }
+    }
+}
+
+// class for buy bundles start
+
+.card-comp002 {
+    .card {
+        border-radius: 9px !important;
+        box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
+        border: 0px;
+        cursor: pointer;
+
+        .card-insec {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+
+            h5 {
+                font-family: $vodafonrg-regular !important;
+                font-size: 28px;
+                font-weight: 700 !important;
+                line-height: 30px;
+                letter-spacing: 1.68px;
+                text-align: center;
+            }
+
+            .bun-supp-txt {
+                font-family: $vodafonlt-light;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0.56px;
+                text-align: center;
+            }
         }
     }
+}
+
+
+// class for buy bundles end
+
+
 
 @media (max-width: 992px) {
-    .card-comp001{
-        display:-webkit-box;
-    justify-content: space-between;
-    flex-wrap: wrap;
-        .card{
-            border-radius:9px !important;
+    .card-comp001 {
+        display: -webkit-box;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            border-radius: 9px !important;
             box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
-            border:0px;
+            border: 0px;
             flex: 1 0 auto;
-            margin-bottom:0px;
+            margin-bottom: 0px;
             width: 48%;
-            .card-insec{
+
+            .card-insec {
                 display: flex;
                 align-items: center;
-            img{width:47px; height:41px;margin:23px 10px 23px 23px;;}
-            .card-body{    
-                .card-title{
-                    font-size:16px;
-                    line-height:18px;
-                    color:$dark-gray;
-                    letter-spacing:0.5px;
+
+                img {
+                    width: 47px;
+                    height: 41px;
+                    margin: 23px 10px 23px 23px;
+                }
+
+                .card-body {
+                    .card-title {
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: $dark-gray;
+                        letter-spacing: 0.5px;
+                    }
                 }
             }
         }
+    }
+
+
+}
+
+@media (max-width: 767.98px) {
+
+    .card-comp002 {
+        display: -webkit-box;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            border-radius: 9px !important;
+            box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
+            border: 0px;
+            flex: 1 0 auto;
+            margin-bottom: 0px;
+            width: 48%;
+
+            .card-insec {
+                display: flex;
+                align-items: center;
+
+                h5 {
+
+                    font-size: 20px;
+                    line-height: 22px;
+                    letter-spacing: 0.5px;
+                }
+
+                .bun-supp-txt {
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0.5px;
+                }
+            }
         }
     }
 }
