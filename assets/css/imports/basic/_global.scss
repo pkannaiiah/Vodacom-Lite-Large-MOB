@@ -69,7 +69,11 @@ select:focus,
 }
 
 
-.vse_sm{background:#EBEBEB;padding:33px;height: 100vh;}
+.vse_sm{
+    padding:33px;height: 100vh;
+    background: #EBEBEB url(../../../../images/web-body-bg.png) top;
+    background-repeat: no-repeat;
+}
 
 .text-ellipsis {
     white-space: nowrap;
