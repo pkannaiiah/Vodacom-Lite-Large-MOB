@@ -43,21 +43,23 @@
         box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
         border: 0px;
         cursor: pointer;
-        .card-body{
+
+        .card-body {
             padding: 0px 10px !important;
         }
+
         .card-insec {
             display: flex;
             align-items: center;
             padding: 10px;
 
             h5 {
-                font-family:$vodafonrg-bold !important;
+                font-family: $vodafonrg-bold !important;
                 font-size: 28px;
                 line-height: 30px;
                 letter-spacing: 1.68px;
                 text-align: center;
-                margin-bottom:15px;
+                margin-bottom: 15px;
             }
 
             .bun-supp-txt {
@@ -75,10 +77,71 @@
 
 // class for buy bundles end
 
-
-.summary-card {
+//summary card start
+.summary-card-mobi {
     display: none;
 }
+
+.summary-card-web {
+    height: 316px;
+    // background: linear-gradient(180deg, $primary 27.54%, $dark-red 88.84%);
+    background: $primary;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px 25px;
+    .card-title {
+        font-family: $vodafonrg-regular;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        color: $white;
+    }
+
+    .card-support {
+        font-family: $vodafonrg-regular;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: $white;
+    }
+}
+
+.summary-card-details {
+    padding: 40px 25px;
+
+    .summary-bld-txt {
+        font-family: $vodafonrg-regular;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        color: $dark-gray;
+    }
+
+    .summary-regu-txt {
+        font-family: $vodafonrg-regular;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        color: $dark-gray;
+    }
+
+    .summarry-fina-txt {
+        font-family: $vodafonrg-regular;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $dark-gray;
+    }
+}
+
+//summary card end
 
 @media (max-width: 992px) {
     .card-comp001 {
@@ -119,8 +182,6 @@
 
 }
 
-
-
 @media (max-width: 767.98px) {
 
     .card-comp002 {
@@ -135,7 +196,7 @@
             flex: 1 0 auto;
             margin-bottom: 0px;
             width: 48%;
-            
+
             .card-insec {
                 display: flex;
                 align-items: center;
@@ -154,19 +215,84 @@
             }
         }
     }
-    .summary-card {
-        height: 316px;
-        background: linear-gradient(180deg, $primary 27.54%, $dark-red 88.84%);
-        border-radius: 14px;
-        display: block;
+
+    //Summary card start
+    .summary-card-web {
+        display: none;
     }
+
+    .summary-card-mobi {
+        height: 316px;
+        // background: linear-gradient(180deg, $primary 27.54%, $dark-red 88.84%);
+        background: $primary;
+        border-radius: 14px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 75px 25px;
+
+        .card-title {
+            font-family: $vodafonrg-regular;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 25px;
+            text-align: center;
+            color: $white;
+        }
+
+        .card-support {
+            font-family: $vodafonrg-regular;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: $white;
+        }
+    }
+
+    .summary-card-details {
+        padding: 40px 25px;
+
+        .summary-bld-txt {
+            font-family: $vodafonrg-regular;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 0.5px;
+            color: $dark-gray;
+        }
+
+        .summary-regu-txt {
+            font-family: $vodafonrg-regular;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+            color: $dark-gray;
+        }
+
+        .summarry-fina-txt {
+            font-family: $vodafonrg-regular;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: $dark-gray;
+        }
+    }
+
+    //Summary card end
 }
 
 @media (max-width: 320px) {
-    .card-comp001{
-        .card{
-            .card-insec{
-                img{width:40px; height:35px;margin:23px 10px 23px 10px;;}
+    .card-comp001 {
+        .card {
+            .card-insec {
+                img {
+                    width: 40px;
+                    height: 35px;
+                    margin: 23px 10px 23px 10px;
+                }
             }
         }
     }

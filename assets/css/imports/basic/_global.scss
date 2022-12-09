@@ -68,7 +68,10 @@ select:focus,
 .flex_grp_end {
     @extend %flex_grp_end;
 }
-
+.background-none
+{
+    background: none !important;
+}
 .vse_sm{
     padding:33px;height: 100vh;
     background: #EBEBEB url(../../../../images/web-body-bg.png) top;
@@ -723,9 +726,16 @@ text-overflow: ellipsis;
         div{text-align: center !important; width:80%;}
     }
 }
+<<<<<<< HEAD
 /*language-comp*/
 .language-comp{
     width:100%;
+=======
+
+.dark-stroke
+{
+    border-top: 1px solid #333333;
+>>>>>>> 0dfd4d9599d7c5af7f86cb7b0a799b0e034074d1
 }
 
 
