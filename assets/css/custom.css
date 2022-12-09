@@ -42,11 +42,15 @@
   color: #E60000;
 }
 
+.hyperlink.disabled:hover, .hyperlink:disabled:hover, .hyperlink.disabled, .hyperlink:disabled, .custom_btn_primary:disabled, .custom_btn_primary.disabled, .custom_btn.disabled:hover, .custom_btn:disabled:hover, .custom_btn.disabled, .custom_btn:disabled {
+  color: #999999;
+}
+
 a:hover, a, body, .secondary_color {
   color: #333333;
 }
 
-.custom_btn_primary:disabled, .custom_btn_primary.disabled, .custom_btn_primary:hover, .custom_btn_primary, .custom_btn.disabled:hover, .custom_btn:disabled:hover, .custom_btn.disabled, .custom_btn:disabled {
+.custom_btn_primary:hover, .custom_btn_primary {
   color: #FFFFFF;
 }
 
@@ -91,7 +95,6 @@ a:hover, a, body, .secondary_color {
   align-items: center;
 }
 
-/*ka-st*/
 .flex_grp_end {
   display: flex;
   align-items: center;
@@ -240,13 +243,6 @@ input[type=number] {
 .hyperlink.hyperlink_sm {
   font-size: 12px;
 }
-.hyperlink.disabled, .hyperlink:disabled {
-  color: #DFDFE1;
-}
-.hyperlink.disabled:hover, .hyperlink:disabled:hover {
-  color: #DFDFE1;
-}
-
 .backbtn-comp {
   display: flex;
   justify-content: space-between;
@@ -991,8 +987,8 @@ select:focus,
   margin-top: 10px;
 }
 
-.mt-20 {
-  margin-top: 20px;
+.mt-22 {
+  margin-top: 22px;
 }
 
 .mt-30 {
@@ -1655,8 +1651,16 @@ hr {
   text-align: left;
 }
 
+<<<<<<< HEAD
 .mt-res-80 {
   margin-top: 36px;
+=======
+.sup-text p {
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  text-align: left;
+>>>>>>> eeb94c1c5c472bfde1416643ad455aa51b551421
 }
 
 @media (min-width: 1024px) {
@@ -2020,6 +2024,18 @@ hr {
   align-self: center;
 }
 
+.vfmcard-bg-comp {
+  width: 439px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 40px;
+  margin: 0 auto;
+}
+.vfmcard-bg-comp p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .summary-card-mobi {
   display: none;
 }
@@ -2270,6 +2286,13 @@ hr {
     height: 28px;
     width: 28px;
   }
+  .vfmcard-bg-comp {
+    width: 100%;
+  }
+  .vfmcard-bg-comp p {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 @media (max-width: 320px) {
   .card-comp001 .card .card-insec img {
@@ -2517,7 +2540,7 @@ hr {
   transform: translateY(50%);
   position: relative;
 }
-.switch-comp span {
+.switch-comp .active {
   font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
 }
 .switch-comp .slider {
@@ -2565,6 +2588,26 @@ hr {
 }
 .switch-comp .switch.flat input:checked + .slider {
   background: #007C92;
+}
+
+.recharg-pg-switch .switch-comp {
+  width: 130px;
+  margin: 0 auto;
+}
+
+/*swich-disabled*/
+.swich-disabled .active {
+  color: #999999 !important;
+}
+.swich-disabled span {
+  color: #999999 !important;
+}
+.swich-disabled .slider {
+  box-shadow: 0 0 0 2px #999999, 0 0 4px #999999 !important;
+  background: #999999 !important;
+}
+.swich-disabled .slider::before {
+  background: #666666 !important;
 }
 
 @media (max-width: 768px) {
@@ -2713,6 +2756,7 @@ hr {
 }
 
 .p-note {
+<<<<<<< HEAD
   font-size: 18px;
   color: #666666;
   text-align: left;
@@ -2720,6 +2764,11 @@ hr {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 1px;
+=======
+  font-size: 12px;
+  color: #ccc;
+  text-align: left;
+>>>>>>> eeb94c1c5c472bfde1416643ad455aa51b551421
 }
 
 @media (max-width: 768px) {

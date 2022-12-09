@@ -44,12 +44,12 @@
     &:disabled {
         background: $disable;
         border-color: $disable;
-        @extend %white-color;
+        @extend %dark-gray;
         cursor: auto;
         &:hover {
             background: $disable;
             border-color: $disable;
-            @extend %white-color;
+            @extend %dark-gray;
         }
     }
     .icon{
@@ -92,7 +92,7 @@
     &:disabled, &.disabled{
         background: $disable;
         border-color: $disable !important;
-        @extend %white-color;
+        @extend %dark-gray;
     }
 }
 
@@ -146,9 +146,9 @@
         font-size: 12px
     }
     &.disabled, &:disabled{
-        color: #DFDFE1;
+        @extend %dark-gray;
         &:hover{
-            color: #DFDFE1;
+            @extend %dark-gray;
         }
     }
 }

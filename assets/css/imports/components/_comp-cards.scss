@@ -104,8 +104,20 @@
             }
 
 }
-
 // class for buy bundles end
+
+.vfmcard-bg-comp {
+    width: 439px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 40px;
+    margin: 0 auto;
+
+    p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
 
 //summary card start
 .summary-card-mobi {
@@ -260,8 +272,6 @@
             }
         }
     }
-
-
 }
 
 @media (max-width: 767.98px) {
@@ -421,17 +431,18 @@
             }
 
 }
+.vfmcard-bg-comp {
+    width:100%; 
+    p {font-size:20px; line-height:22px;}
+}
+
 }
 
 @media (max-width: 320px) {
     .card-comp001 {
         .card {
             .card-insec {
-                img {
-                    width: 40px;
-                    height: 35px;
-                    margin: 23px 10px 23px 10px;
-                }
+                img {width:40px; height:35px; margin:23px 10px 23px 10px;}
             }
         }
     }
