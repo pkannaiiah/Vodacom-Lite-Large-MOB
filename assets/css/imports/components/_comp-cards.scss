@@ -65,7 +65,7 @@
             .bun-supp-txt {
                 font-family: $vodafonlt-light;
                 font-size: 18px;
-                font-weight: 400;
+                
                 line-height: 22px;
                 letter-spacing: 0.56px;
                 text-align: center;
@@ -82,8 +82,7 @@
         flex: 1 0 48%;
         .card_heading
         {
-            font-family:$vodafonrg-regular;
-            font-weight: 700;
+            font-family:$vodafonrg-bold;
             font-size: 18px;
             line-height: 24px;
             letter-spacing: 1px;
@@ -91,7 +90,6 @@
         .card_main_txt
         {
             font-family: $vodafonrg-regular;
-            font-weight: 400;
             font-size: 32px;
             line-height: 60px;
             letter-spacing: 1.5px;
@@ -125,31 +123,28 @@
 }
 
 .summary-card-web {
-    height: 316px;
-    // background: linear-gradient(180deg, $primary 27.54%, $dark-red 88.84%);
-    background: $primary;
-    border-radius: 14px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 75px 25px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: $primary;
     .card-title {
-        font-family: $vodafonrg-regular;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 25px;
+        font-family: $vodafonrg-bold;
+        font-size: 28px;
+        line-height: 34px;
         text-align: center;
+        letter-spacing: 1.5px;
         color: $white;
     }
 
     .card-support {
         font-family: $vodafonrg-regular;
-        font-weight: 400;
         font-size: 16px;
         line-height: 18px;
         text-align: center;
         letter-spacing: 0.5px;
         color: $white;
+        margin-top: 20px;
     }
 }
 
@@ -157,8 +152,7 @@
     padding: 40px 25px;
 
     .summary-bld-txt {
-        font-family: $vodafonrg-regular;
-        font-weight: 700;
+        font-family: $vodafonrg-bold;
         font-size: 20px;
         line-height: 22px;
         letter-spacing: 0.5px;
@@ -167,7 +161,7 @@
 
     .summary-regu-txt {
         font-family: $vodafonrg-regular;
-        font-weight: 400;
+        
         font-size: 16px;
         line-height: 18px;
         letter-spacing: 0.5px;
@@ -176,7 +170,7 @@
 
     .summarry-fina-txt {
         font-family: $vodafonrg-regular;
-        font-weight: 400;
+        
         font-size: 18px;
         line-height: 21px;
         color: $dark-gray;
@@ -195,7 +189,6 @@
 
     .success-heading {
         font-family: $vodafonlt-light;
-        font-weight: 400;
         font-size: 32px;
         line-height: 34px;
         text-align: center;
@@ -203,8 +196,7 @@
     }
     .success-xsma-txt
         {
-            font-family: $vodafonrg-regular;
-            font-weight: 700;
+            font-family: $vodafonrg-bold;
             font-size: 20px;
             line-height: 26px;
             letter-spacing: 1px;
@@ -212,7 +204,6 @@
         .success-xlar-text
         {
             font-family: $vodafonlt-light;
-            font-weight: 400;
             font-size: 28px;
             line-height: 34px;
             letter-spacing: 1.5px;
@@ -220,7 +211,6 @@
         .success-lar-text
         {
             font-family: $vodafonrg-regular;
-            font-weight: 400;
             font-size: 24px;
             line-height: 30px;
             letter-spacing: 1.2px;
@@ -228,7 +218,6 @@
         .success-smal-text
         {
             font-family: $vodafonlt-light;
-            font-weight: 400;
             font-size: 18px;
             line-height: 24px;
             letter-spacing: 1px;
@@ -314,18 +303,17 @@
     }
 
     .summary-card-mobi {
-        height: 316px;
+        height: 200px;
         // background: linear-gradient(180deg, $primary 27.54%, $dark-red 88.84%);
         background: $primary;
-        border-radius: 14px;
+        border-radius: 0px 0px 14px 14px;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 75px 25px;
+        margin: -20px -20px 0px -20px;
 
         .card-title {
-            font-family: $vodafonrg-regular;
-            font-weight: 700;
+            font-family: $vodafonrg-bold;
             font-size: 22px;
             line-height: 25px;
             text-align: center;
@@ -334,7 +322,6 @@
 
         .card-support {
             font-family: $vodafonrg-regular;
-            font-weight: 400;
             font-size: 16px;
             line-height: 18px;
             text-align: center;
@@ -344,11 +331,10 @@
     }
 
     .summary-card-details {
-        padding: 40px 25px;
+        padding: 20px;
 
         .summary-bld-txt {
-            font-family: $vodafonrg-regular;
-            font-weight: 700;
+            font-family: $vodafonrg-bold;
             font-size: 20px;
             line-height: 22px;
             letter-spacing: 0.5px;
@@ -357,7 +343,6 @@
 
         .summary-regu-txt {
             font-family: $vodafonrg-regular;
-            font-weight: 400;
             font-size: 16px;
             line-height: 18px;
             letter-spacing: 0.5px;
@@ -366,7 +351,6 @@
 
         .summarry-fina-txt {
             font-family: $vodafonrg-regular;
-            font-weight: 400;
             font-size: 18px;
             line-height: 21px;
             color: $dark-gray;

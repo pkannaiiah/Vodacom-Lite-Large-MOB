@@ -1990,7 +1990,6 @@ hr {
 .card-comp002 .card .card-insec .bun-supp-txt {
   font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
   font-size: 18px;
-  font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.56px;
   text-align: center;
@@ -2004,15 +2003,13 @@ hr {
   flex: 1 0 48%;
 }
 .card-comp003 .card_heading {
-  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 1px;
 }
 .card-comp003 .card_main_txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 32px;
   line-height: 60px;
   letter-spacing: 1.5px;
@@ -2040,38 +2037,35 @@ hr {
 }
 
 .summary-card-web {
-  height: 316px;
-  background: #E60000;
-  border-radius: 14px;
+  height: 300px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 75px 25px;
+  background: #E60000;
 }
 .summary-card-web .card-title {
-  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 25px;
+  font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 34px;
   text-align: center;
+  letter-spacing: 1.5px;
   color: #FFFFFF;
 }
 .summary-card-web .card-support {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.5px;
   color: #FFFFFF;
+  margin-top: 20px;
 }
 
 .summary-card-details {
   padding: 40px 25px;
 }
 .summary-card-details .summary-bld-txt {
-  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.5px;
@@ -2079,7 +2073,6 @@ hr {
 }
 .summary-card-details .summary-regu-txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.5px;
@@ -2087,7 +2080,6 @@ hr {
 }
 .summary-card-details .summarry-fina-txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #999999;
@@ -2098,36 +2090,31 @@ hr {
 }
 .success-comp .success-heading {
   font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 32px;
   line-height: 34px;
   text-align: center;
   letter-spacing: 1.72px;
 }
 .success-comp .success-xsma-txt {
-  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 1px;
 }
 .success-comp .success-xlar-text {
   font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 1.5px;
 }
 .success-comp .success-lar-text {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 1.2px;
 }
 .success-comp .success-smal-text {
   font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 1px;
@@ -2195,17 +2182,16 @@ hr {
     display: none;
   }
   .summary-card-mobi {
-    height: 316px;
+    height: 200px;
     background: #E60000;
-    border-radius: 14px;
+    border-radius: 0px 0px 14px 14px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 75px 25px;
+    margin: -20px -20px 0px -20px;
   }
   .summary-card-mobi .card-title {
-    font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
     font-size: 22px;
     line-height: 25px;
     text-align: center;
@@ -2213,7 +2199,6 @@ hr {
   }
   .summary-card-mobi .card-support {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
@@ -2221,11 +2206,10 @@ hr {
     color: #FFFFFF;
   }
   .summary-card-details {
-    padding: 40px 25px;
+    padding: 20px;
   }
   .summary-card-details .summary-bld-txt {
-    font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.5px;
@@ -2233,7 +2217,6 @@ hr {
   }
   .summary-card-details .summary-regu-txt {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.5px;
@@ -2241,7 +2224,6 @@ hr {
   }
   .summary-card-details .summarry-fina-txt {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #999999;
@@ -2754,6 +2736,20 @@ hr {
   line-height: 30px;
 }
 
+.vfm-bg-comp1 {
+  width: 439px;
+  background: #fff;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.vfm-bg-comp1 p {
+  font-size: 24px;
+  line-height: 30px;
+}
+.vfm-bg-comp1 .summary-card-details {
+  padding: 40px;
+}
+
 .p-note {
   font-size: 18px;
   color: #666666;
@@ -2773,10 +2769,22 @@ hr {
     font-size: 20px;
     line-height: 30px;
   }
+  .vfm-bg-comp1 {
+    width: 100%;
+    background: transparent;
+  }
+  .vfm-bg-comp1 p {
+    font-size: 20px;
+    line-height: 30px;
+  }
   .p-note {
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.5px;
     color: #666666;
+  }
+  .vfm-bg-comp1 .summary-card-details {
+    padding: 20px;
+    margin-top: 40px;
   }
 }/*# sourceMappingURL=custom.css.map */
