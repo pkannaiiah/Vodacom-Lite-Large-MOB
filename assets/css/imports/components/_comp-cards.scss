@@ -75,10 +75,16 @@
 
 // class for buy bundles end
 
-
-.summary-card {
+//summary card start
+.summary-card-mobi {
     display: none;
 }
+.summary-card-details
+{
+    border: 0px solid red;
+}
+
+//summary card end
 
 @media (max-width: 992px) {
     .card-comp001 {
@@ -119,8 +125,6 @@
 
 }
 
-
-
 @media (max-width: 767.98px) {
 
     .card-comp002 {
@@ -154,19 +158,72 @@
             }
         }
     }
-    .summary-card {
+    //Summary card start
+    .summary-card-mobi {
         height: 316px;
-        background: linear-gradient(180deg, $primary 27.54%, $dark-red 88.84%);
+        // background: linear-gradient(180deg, $primary 27.54%, $dark-red 88.84%);
+        background: $primary;
         border-radius: 14px;
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 75px 25px;
+        .card-title{
+            font-family: $vodafonrg-regular;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 25px;
+            text-align: center;
+            color: $white;
+        }
+        .card-support
+        {
+            font-family: $vodafonrg-regular;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: $white;
+        }
     }
+        .summary-card-details {
+            padding: 60px 25px;
+    
+            .summary-bld-txt {
+                font-family: $vodafonrg-regular;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 22px;
+                letter-spacing: 0.5px;
+                color: $dark-gray;
+            }
+    
+            .summary-regu-txt {
+                font-family: $vodafonrg-regular;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: 0.5px;
+                color: $dark-gray;
+            }
+    
+            .summarry-fina-txt {
+                font-family: $vodafonrg-regular;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: $dark-gray;
+            }
+        }
+    //Summary card end
 }
 
 @media (max-width: 320px) {
     .card-comp001{
         .card{
             .card-insec{
-                img{width:40px; height:35px;margin:23px 10px 23px 10px;;}
+                img{width:40px; height:35px;margin:23px 10px 23px 10px;}
             }
         }
     }
