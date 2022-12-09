@@ -1909,8 +1909,58 @@ hr {
   display: none;
 }
 
+.summary-card-web {
+  height: 316px;
+  background: #E60000;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 75px 25px;
+}
+.summary-card-web .card-title {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.summary-card-web .card-support {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
 .summary-card-details {
-  border: 0px solid red;
+  padding: 40px 25px;
+}
+.summary-card-details .summary-bld-txt {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+.summary-card-details .summary-regu-txt {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+.summary-card-details .summarry-fina-txt {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 @media (max-width: 992px) {
@@ -1971,6 +2021,9 @@ hr {
     line-height: 16px;
     letter-spacing: 0.5px;
   }
+  .summary-card-web {
+    display: none;
+  }
   .summary-card-mobi {
     height: 316px;
     background: #E60000;
@@ -1998,7 +2051,7 @@ hr {
     color: #FFFFFF;
   }
   .summary-card-details {
-    padding: 60px 25px;
+    padding: 40px 25px;
   }
   .summary-card-details .summary-bld-txt {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
