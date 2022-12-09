@@ -165,9 +165,9 @@ select:focus,
 
 .app_main_wrapper {
     max-width: 768px;
-    //margin: 0px auto;
-    //min-height: 100vh;
-    height: calc(100vh - 80px);
+    //height: calc(100vh - 80px);
+    background: url(../images/vf-bg.png) no-repeat;
+    background-position: center;
 }
 
 .post_login {
@@ -723,7 +723,10 @@ text-overflow: ellipsis;
         div{text-align: center !important; width:80%;}
     }
 }
-
+/*language-comp*/
+.language-comp{
+    width:100%;
+}
 
 
 @media (min-width: 1024px) {

@@ -29,7 +29,9 @@
 .white_bg {
     @extend %white-bg;
 }
-
+.primary_color {
+    @extend %primary-color;
+}
 .primary_bg {
     @extend %primary-bg;
 }
@@ -37,7 +39,6 @@
 .light_gray_bg{
     background: $light-gray;
 }
-.dark_green
-{
+.dark_green{
     color: $dark-green !important;
 }
