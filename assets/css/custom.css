@@ -1739,7 +1739,7 @@ hr {
     display: flex;
     justify-content: space-between;
     background: #E60000;
-    padding: 10px;
+    padding: 10px 20px;
     height: 50px;
     vertical-align: middle;
     align-items: center;
@@ -1872,18 +1872,21 @@ hr {
   border: 0px;
   cursor: pointer;
 }
+.card-comp002 .card .card-body {
+  padding: 0px 10px !important;
+}
 .card-comp002 .card .card-insec {
   display: flex;
   align-items: center;
   padding: 10px;
 }
 .card-comp002 .card .card-insec h5 {
-  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif !important;
+  font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif !important;
   font-size: 28px;
-  font-weight: 700 !important;
   line-height: 30px;
   letter-spacing: 1.68px;
   text-align: center;
+  margin-bottom: 15px;
 }
 .card-comp002 .card .card-insec .bun-supp-txt {
   font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;

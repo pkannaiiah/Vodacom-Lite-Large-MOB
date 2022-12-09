@@ -43,19 +43,21 @@
         box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
         border: 0px;
         cursor: pointer;
-
+        .card-body{
+            padding: 0px 10px !important;
+        }
         .card-insec {
             display: flex;
             align-items: center;
             padding: 10px;
 
             h5 {
-                font-family: $vodafonrg-regular !important;
+                font-family:$vodafonrg-bold !important;
                 font-size: 28px;
-                font-weight: 700 !important;
                 line-height: 30px;
                 letter-spacing: 1.68px;
                 text-align: center;
+                margin-bottom:15px;
             }
 
             .bun-supp-txt {
@@ -72,8 +74,6 @@
 
 
 // class for buy bundles end
-
-
 
 @media (max-width: 992px) {
     .card-comp001 {
@@ -128,13 +128,12 @@
             flex: 1 0 auto;
             margin-bottom: 0px;
             width: 48%;
-
+            
             .card-insec {
                 display: flex;
                 align-items: center;
 
                 h5 {
-
                     font-size: 20px;
                     line-height: 22px;
                     letter-spacing: 0.5px;
