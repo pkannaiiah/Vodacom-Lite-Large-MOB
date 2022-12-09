@@ -67,6 +67,12 @@
     animation-duration: 0.75s;
     animation-fill-mode: forwards;
 }
+.onb-vfl-weblogo
+{
+    img{
+        width: 84px;
+    }
+}
 
 @media (max-width: 768px) {
     .web-header-comp1{display: none;}
