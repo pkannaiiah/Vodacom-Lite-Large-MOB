@@ -44,7 +44,12 @@
     line-height: 26px;
     letter-spacing: 1.34px;
 }
+
+.web-top-header{display: none !important;}
+.mt0-0p{margin-top:0px !important;}
+
 @media (max-width: 768px) {
+    .web-top-header{display: block !important;}
     .vfm-bg-comp {
         width:100%;
         background:transparent;    

@@ -73,8 +73,7 @@ select:focus,
     background: none !important;
 }
 .vse_sm{
-    padding: 33px;
-    height: 100%;
+    padding:24px 33px;
     background: url(../images/bg-web-res.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -758,6 +757,9 @@ text-overflow: ellipsis;
     h5{color: $dark-gray !important;}
 }
 
+.language-comp{
+    select{padding: 2px 4px;}
+}
 @media (min-width: 1024px) {
 .mt-minhed {margin-top: 60px;}
 }

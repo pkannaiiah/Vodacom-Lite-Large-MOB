@@ -421,16 +421,10 @@ h5 {
   margin-bottom: 0px;
 }
 
-.amount_stripe {
-  color: #999999;
-  font-size: 12px;
-  text-decoration: line-through;
-}
-
 .numb-text {
   font-size: 20px;
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  color: #999999;
+  color: #333333;
   line-height: 22px;
   letter-spacing: 0.5;
 }
@@ -943,8 +937,7 @@ select:focus,
 }
 
 .vse_sm {
-  padding: 33px;
-  height: 100%;
+  padding: 24px 33px;
   background: url(../images/bg-web-res.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1668,6 +1661,10 @@ hr {
   color: #999999 !important;
 }
 
+.language-comp select {
+  padding: 2px 4px;
+}
+
 @media (min-width: 1024px) {
   .mt-minhed {
     margin-top: 60px;
@@ -1776,7 +1773,7 @@ hr {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #333333;
-  padding: 29px 30px;
+  padding: 29px 25px;
 }
 .header .web-header-comp1 nav .nav-link .active {
   color: #E60000 !important;
@@ -2006,26 +2003,33 @@ hr {
   text-align: center;
 }
 
-.card-comp003 {
+.data-pack-comp {
+  display: -webkit-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.data-pack-comp .card-comp003 {
   background: #FFFFFF;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
-  padding: 20px;
-  flex: 1 0 48%;
+  padding: 30px;
+  flex: 1 0 auto;
+  width: 48.8%;
 }
-.card-comp003 .card_heading {
+.data-pack-comp .card-comp003 .card_heading {
   font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 1px;
+  margin-bottom: 7px;
 }
-.card-comp003 .card_main_txt {
+.data-pack-comp .card-comp003 .card_main_txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 32px;
-  line-height: 60px;
+  line-height: 30px;
   letter-spacing: 1.5px;
 }
-.card-comp003 img {
+.data-pack-comp .card-comp003 img {
   height: 36px;
   width: 36px;
   align-self: center;
@@ -2261,7 +2265,7 @@ hr {
   }
   .card-comp003 {
     padding: 20px;
-    flex: 1 0 48%;
+    flex: 1 0 48.8%;
   }
   .card-comp003 .card_heading {
     font-size: 18px;
@@ -2780,7 +2784,18 @@ hr {
   letter-spacing: 1.34px;
 }
 
+.web-top-header {
+  display: none !important;
+}
+
+.mt0-0p {
+  margin-top: 0px !important;
+}
+
 @media (max-width: 768px) {
+  .web-top-header {
+    display: block !important;
+  }
   .vfm-bg-comp {
     width: 100%;
     background: transparent;
