@@ -265,6 +265,7 @@ input[type=number] {
 .link-btn-bla {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   margin-top: 30px;
 }
 .link-btn-bla .textlink {
@@ -2728,12 +2729,14 @@ hr {
   width: 439px;
   background: #fff;
   border-radius: 6px;
-  padding: 40px;
+  padding: 20px;
   margin: 0 auto;
 }
 .vfm-bg-comp p {
   font-size: 24px;
   line-height: 30px;
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  letter-spacing: 1.52px;
 }
 
 .vfm-bg-comp1 {
@@ -2782,9 +2785,5 @@ hr {
     line-height: 18px;
     letter-spacing: 0.5px;
     color: #666666;
-  }
-  .vfm-bg-comp1 .summary-card-details {
-    padding: 20px;
-    margin-top: 40px;
   }
 }/*# sourceMappingURL=custom.css.map */
