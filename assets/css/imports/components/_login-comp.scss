@@ -12,8 +12,13 @@
 }
 
 .p-note {
-    font-size: 12px;
-    color: #ccc;
+    font-size: 18px;
+    color: #999999;
+    text-align: left;
+    margin-top: 5px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
 }
 @media (max-width: 768px) {
     .vfm-bg-comp {
@@ -24,4 +29,10 @@
             line-height: 30px;
         }
     }
+    .p-note{
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        color: #666666;
+}
 }
