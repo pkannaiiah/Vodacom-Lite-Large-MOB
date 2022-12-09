@@ -2043,6 +2043,46 @@ hr {
   color: #999999;
 }
 
+.success-comp .success-img img {
+  width: 90px;
+}
+.success-comp .success-heading {
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 1.72px;
+}
+.success-comp .success-xsma-txt {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+.success-comp .success-xlar-text {
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1.5px;
+}
+.success-comp .success-lar-text {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+.success-comp .success-smal-text {
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
 @media (max-width: 992px) {
   .card-comp001 {
     display: -webkit-box;
@@ -2155,6 +2195,14 @@ hr {
     font-size: 18px;
     line-height: 21px;
     color: #999999;
+  }
+  .success-comp .success-img img {
+    width: 80px;
+  }
+  .success-comp .success-heading {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
   }
 }
 @media (max-width: 320px) {
@@ -2594,30 +2642,11 @@ hr {
   margin: 0 auto;
 }
 .vfm-bg-comp p {
-  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 30px;
 }
 
 .p-note {
-  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color: #999999;
-  text-align: left;
-  margin-top: 12px;
-}
-
-@media (max-width: 768px) {
-  .vfm-bg-comp {
-    width: 100%;
-    background: transparent;
-    padding: 30px;
-  }
-  .vfm-bg-comp p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .p-note {
-    font-size: 16px;
-  }
+  font-size: 12px;
+  color: #ccc;
 }/*# sourceMappingURL=custom.css.map */

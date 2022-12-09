@@ -1,19 +1,17 @@
-.vfm-bg-comp{    
-    width:439px;
-    background:#fff;
-    border-radius:6px;
-    padding:40px;
-    margin:0 auto;
-    p{font-family:$vodafonlt-light;font-size:24px; line-height:30px;}
-}
-.p-note{font-family:$vodafonlt-light; font-size:18px; color:$dark-gray;text-align: left; margin-top:12px;}
+.vfm-bg-comp {
+    width: 439px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 40px;
+    margin: 0 auto;
 
-@media (max-width: 768px) {
-    .vfm-bg-comp{
-        width:100%;
-        background:transparent;
-        padding:30px;
-        p{font-size:20px; line-height:30px;}
+    p {
+        font-size: 24px;
+        line-height: 30px;
     }
-    .p-note{font-size:16px;}
+}
+
+.p-note {
+    font-size: 12px;
+    color: #ccc;
 }
