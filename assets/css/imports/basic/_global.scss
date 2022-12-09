@@ -776,6 +776,9 @@ text-overflow: ellipsis;
     }
 }
 
+@media (max-width: 1024px) {
+    .navbar-toggler{display: none;}
+}
 @media (max-width: 767.98px) {
     body {
         font-size: 14px;
