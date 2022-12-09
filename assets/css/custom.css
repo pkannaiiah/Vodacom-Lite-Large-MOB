@@ -1020,6 +1020,10 @@ select:focus,
   padding-top: 60px;
 }
 
+.pt-45 {
+  padding-top: 45px;
+}
+
 .pb-76 {
   padding-bottom: 76px;
 }
@@ -2289,6 +2293,9 @@ hr {
   .vfmcard-bg-comp p {
     font-size: 20px;
     line-height: 22px;
+  }
+  .data-pack-comp .card-comp003 {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
