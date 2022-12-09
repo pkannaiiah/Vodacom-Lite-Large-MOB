@@ -1897,6 +1897,10 @@ hr {
   text-align: center;
 }
 
+.summary-card {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .card-comp001 {
     display: -webkit-box;
@@ -1954,6 +1958,12 @@ hr {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.5px;
+  }
+  .summary-card {
+    height: 316px;
+    background: linear-gradient(180deg, #E60000 27.54%, #820000 88.84%);
+    border-radius: 14px;
+    display: block;
   }
 }
 @media (max-width: 320px) {
