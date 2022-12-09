@@ -18,13 +18,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css" />
   <!--Custom css-->
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
-  <style>
-    .modal-popup {
-      background: rgba(0, 0, 0, 0.6);
-      background-size: cover;
-      z-index: 99999;
-    }
-  </style>
 </head>
 
 <body>
@@ -78,12 +71,12 @@
         <!--mobile header-->
         <div class="mobile-header-comp2">
           <div class="moble-header">
-            <div class="backarrow">
-              <a href="">
+            <div>
+              <a href="#">
                 <img src="assets/images/back-arrow.svg" alt="" title="" />
               </a>
             </div>
-            <div><label>Buy</label></div>
+            <div><label> Buy for 058 345 678 </label></div>
             <div>
               <a href="">
                 <img src="assets/images/home-icon.svg" alt="" title="" />
@@ -101,48 +94,33 @@
 
       <div class="vse_sm">
 
-        <div class="mb-4 mt-2 res-display-none backbtn-comp">
+        <!--<div class="mb-4 mt-2 res-display-none backbtn-comp">
           <a href="#" class="custom_btn_primary_outline border-rad20 back_btn"> Back </a>
-          <!--label> Buy for 058 777 777 </label-->
-        </div>
-
-        <div class="">
-
-
-        </div>
-
-        <div class="mt-3">
-          <div class="cont-heading mb-3"> Enter the Vodacom number that you are recharging </div>
-          <div class="vfm-bg-comp p-3">
-            <div class="input-bas-comp input-group input-group-comp">
-              <span class="input-group-text pl-0" id="basic-addon1">+226</span>
-              <input type="number" class="form-control" placeholder="eg. 12 345 678" aria-label="Username"
-                aria-describedby="basic-addon1">
-            </div>
-            <div class="mt-4">
-              <label>Would you like to save this number to your recents list?</label>
-            </div>
-            <div class="text-center mb-4 mt-4">
-              <div class="switch-comp disbaled">
-                <span>NO</span>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <span>YES</span>
-            </div>
-            </div>
+         label> Buy for 058 777 777 </label-->
+        <div class="vfm-bg-comp text-center">
+          <div class="success-comp">
             <div class="mt-3">
-              <button class="custom_btn custom_btn_primary btn_block mt-20 disabled">Submit</button>
+              <div class="success-xsma-txt">You’re about to delete:</div>
+              <div class="success-xlar-text">058 222 222</div>
             </div>
+            <div class="mt-4 success-lar-text">
+              from your recent numbers list.
+            </div>
+            <div class="mt-4 success-lar-text">
+              Click on “Delete” to proceed.
+            </div>
+            <div class="flex_grp_align_center mt-5">
+              <button class="custom_btn custom_btn_primary_outline btn_block me-2">Back</button>
+              <button class="custom_btn custom_btn_primary btn_block ms-2">Delete</button>
+          </div>
           </div>
         </div>
+      </div>
+  </div><!--vse_sm-->
 
-      </div><!--vse_sm-->
+  </section>
 
-    </section>
-
-    <!--section class="footer_menu">
+  <!--section class="footer_menu">
         <div class="fixed_footer_container">
             <button class="footer_menu_item active">
                 <img src="assets/images/home-bottom-nav-icon.svg" class="red_icon" alt="">
@@ -175,21 +153,9 @@
   </div><!--body_container-->
 
   <!--js-->
-  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/custom.js"></script>
-
-  <script>
-    //debugger;
-    $(document).ready(function () {
-      $(".dropdownmenu001").on('click', function () {
-        $("body").addClass('modal-popup');
-      });
-      $(".listaction").on('click', function () {
-        $("body").removeClass('modal');
-      });
-    });
-  </script>
 
 </body>
 
