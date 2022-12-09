@@ -1907,6 +1907,33 @@ hr {
   text-align: center;
 }
 
+.card-comp003 {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 0 48%;
+}
+.card-comp003 .card_heading {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.card-comp003 .card_main_txt {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 60px;
+  letter-spacing: 1.5px;
+}
+.card-comp003 img {
+  height: 36px;
+  width: 36px;
+  align-self: center;
+}
+
 .summary-card-mobi {
   display: none;
 }
@@ -2125,6 +2152,25 @@ hr {
     font-size: 22px;
     line-height: 25px;
     letter-spacing: 0.5px;
+  }
+  .card-comp003 {
+    padding: 20px;
+    flex: 1 0 48%;
+  }
+  .card-comp003 .card_heading {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+  .card-comp003 .card_main_txt {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+  }
+  .card-comp003 img {
+    height: 28px;
+    width: 28px;
   }
 }
 @media (max-width: 320px) {
