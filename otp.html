@@ -49,19 +49,28 @@
             <img src="assets/images/vodacom-logo.svg" alt="vodacom logo" title="vodacom logo" ?>
         </div>
         <div class="mb-4 primary_color text-center mt-res-80">
-            <h2>Welcome</h2>
+            <h2>OTP</h2>
         </div>
 
         <div class="vfm-bg-comp text-center">
-            <p> Please insert your mobile number below. </p>
+            <p> We’ve sent a One-Time PIN to <br> 058 345 678. <br> Please insert it below. </p>
             <div class="input-bas-comp input-group input-group-comp mb-1 mt-4">
-                <span class="input-group-text pl-0" id="basic-addon1">+226</span>
-                <input type="number" class="form-control" placeholder="Mobile Number" aria-label="Username"
+                <input type="number" class="form-control" placeholder="eg. 1234" aria-label="Username"
                     aria-describedby="basic-addon1">
             </div>
-            <div class="p-note">This number must be able to receive SMSs.</div>
+            <div class="error-message primary_color">
+                You have exceeded the maximum OTP requests allowed by this App. You are temporarily blocked from requesting new OTPs for 5 minutes.
+            </div>
+            <div class="link-btn-bla text-center">
+                <div class="me-2 textlink"> Didn’t receive an OTP? </div>
+                <div class="hyperlink"> Resend </div>
+            </div>
+           
             <div class="mt-4 pt-3">
-                <button class="custom_btn custom_btn_primary btn_block mt-20">Submit</button>
+                <div class="flex_grp_align_center">
+                    <button class="custom_btn custom_btn_primary_outline btn_block">Back</button>
+                    <button class="custom_btn custom_btn_primary btn_block ms-2">Submit</button>
+                </div>
             </div>
 
         </div>

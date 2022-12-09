@@ -1,12 +1,12 @@
 //Buttons
 .custom_btn {
+    font-family: $vodafonrg-regular;
     font-size: 24px;
     cursor: pointer;
     border-radius: 6px;
     border: 1px solid;
     text-align: center;
     padding: 10px 20px;
-    @extend %primary-font;
     height: 40px;
     line-height:30px;
     display: inline-flex;
@@ -111,8 +111,9 @@
 
 .hyperlink{
     @extend %primary-color;
-    @extend %primary-font;
-    font-size: 14px;
+    @extend %vodafonrg-regular;
+    font-size: 16px;
+    line-height: 18px;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -158,6 +159,18 @@
    align-items: center;
 .back_btn{height:30px; width:65px; line-height:19px;text-align:center;}
 label{font-family:$vodafonrg-bold;font-size:24px; margin:0px;padding: 0px; line-height:30px;}
+}
+
+.link-btn-bla{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    .textlink{font-size:16px; text-decoration: underline !important;}
+    a{font-size:16px; text-decoration: underline !important;}
+    a:hover{font-size:16px; text-decoration: underline !important;}
+}
+.link-resen{
+    a{font-size:16px; text-decoration: underline !important;}
 }
 
 @keyframes slide1 {

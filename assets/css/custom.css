@@ -27,19 +27,14 @@
   font-style: normal;
   font-display: swap;
 }
-.input-group-comp .form-control {
-  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
-}
-
 ::-moz-placeholder {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
 }
-
-.footer_menu .footer_menu_item span, .secondfont, .custom_checkbox + label, .custom_radio + label, :-moz-placeholder, :-ms-input-placeholder, ::-moz-placeholder, ::-webkit-input-placeholder, ::placeholder, .form-control {
+.footer_menu .footer_menu_item span, .secondfont, .custom_checkbox + label, .custom_radio + label, :-moz-placeholder, :-ms-input-placeholder, ::-moz-placeholder, ::-webkit-input-placeholder, ::placeholder, .form-control, .hyperlink {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
 }
 
-.primary_12, .primary1_14, .primary1_16, .primary_18, .section_title, .primary_14, .primary_16, .h1-heading, .control-label, .primary-font, .hyperlink, .custom_btn {
+.primary_12, .primary1_14, .primary1_16, .primary_18, .section_title, .primary_14, .primary_16, .h1-heading, .control-label, .primary-font {
   font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
 }
 
@@ -116,6 +111,7 @@ input[type=number] {
 
 /*ka-end*/
 .custom_btn {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 24px;
   cursor: pointer;
   border-radius: 6px;
@@ -207,12 +203,13 @@ input[type=number] {
 }
 .custom_btn_primary_outline:hover {
   background: transparent;
-  border: 1px solid #333333 !important;
-  color: #333333;
+  border: 1px solid #999999 !important;
+  color: #999999;
 }
 
 .hyperlink {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 18px;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
@@ -267,6 +264,29 @@ input[type=number] {
   margin: 0px;
   padding: 0px;
   line-height: 30px;
+}
+
+.link-btn-bla {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.link-btn-bla .textlink {
+  font-size: 16px;
+  text-decoration: underline !important;
+}
+.link-btn-bla a {
+  font-size: 16px;
+  text-decoration: underline !important;
+}
+.link-btn-bla a:hover {
+  font-size: 16px;
+  text-decoration: underline !important;
+}
+
+.link-resen a {
+  font-size: 16px;
+  text-decoration: underline !important;
 }
 
 @-webkit-keyframes slide1 {
@@ -405,7 +425,7 @@ h5 {
 }
 
 .amount_stripe {
-  color: #AAAAAA;
+  color: #999999;
   font-size: 12px;
   text-decoration: line-through;
 }
@@ -413,7 +433,7 @@ h5 {
 .numb-text {
   font-size: 20px;
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
-  color: #333333;
+  color: #999999;
   line-height: 22px;
   letter-spacing: 0.5;
 }
@@ -422,7 +442,7 @@ h5 {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 30px;
-  color: #333333;
+  color: #999999;
   letter-spacing: 1.2px;
 }
 
@@ -431,8 +451,33 @@ h5 {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 23px;
-    color: #333333;
+    color: #999999;
     letter-spacing: 0.5px;
+  }
+  h1 {
+    font-size: 28px !important;
+    letter-spacing: 0.5px;
+    line-height: 30px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+    letter-spacing: 0.5px;
+    line-height: 24px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+    letter-spacing: 0.5px;
+    line-height: 22px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+    letter-spacing: 0.5px;
+    line-height: 20px !important;
+  }
+  h5 {
+    font-size: 16px !important;
+    letter-spacing: 0.5px;
+    line-height: 18px !important;
   }
 }
 @media (max-width: 374.98px) {
@@ -446,7 +491,7 @@ h5 {
 }
 
 .dark_gray_color {
-  color: #333333;
+  color: #999999;
 }
 
 .blue_gray_color {
@@ -454,7 +499,7 @@ h5 {
 }
 
 .dark_gray_color1 {
-  color: #AAAAAA;
+  color: #999999;
 }
 
 .dark_gray_color2 {
@@ -486,7 +531,7 @@ h5 {
 }
 .form-control:disabled, .form-control.disabled, .form-control[readonly] {
   background: #F9F9F9;
-  color: #333333;
+  color: #999999;
   border-color: #CCCCCC;
 }
 .form-control.error {
@@ -498,34 +543,34 @@ h5 {
 }
 
 ::-moz-placeholder {
-  color: #AAAAAA;
+  color: #999999;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #AAAAAA;
+  color: #999999;
   opacity: 1;
 }
 
 ::placeholder {
-  color: #AAAAAA;
+  color: #999999;
   opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: #999999;
 }
 
 ::-moz-placeholder {
-  color: #AAAAAA;
+  color: #999999;
 }
 
 :-ms-input-placeholder {
-  color: #AAAAAA;
+  color: #999999;
 }
 
 :-moz-placeholder {
-  color: #AAAAAA;
+  color: #999999;
 }
 
 input::-webkit-outer-spin-button,
@@ -607,7 +652,7 @@ input::-webkit-inner-spin-button {
   left: -36px;
 }
 .custom_radio:disabled + label {
-  color: #AAAAAA;
+  color: #999999;
 }
 .custom_radio:disabled + label::before {
   background: #F9F9F9;
@@ -620,7 +665,7 @@ input::-webkit-inner-spin-button {
   border: 6px solid #E60000;
 }
 .custom_radio:checked:disabled + label {
-  color: #AAAAAA;
+  color: #999999;
 }
 .custom_checkbox + label {
   position: relative;
@@ -640,7 +685,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #CCCCCC;
 }
 .custom_checkbox:disabled + label {
-  color: #AAAAAA;
+  color: #999999;
 }
 .custom_checkbox:disabled + label::before {
   background: #F9F9F9;
@@ -659,7 +704,7 @@ input::-webkit-inner-spin-button {
   top: 0px;
 }
 .custom_checkbox:checked:disabled + label {
-  color: #AAAAAA;
+  color: #999999;
 }
 textarea.form-control {
   height: 8em;
@@ -730,6 +775,7 @@ textarea.form-control {
   padding: 0px 20px 0px 0px;
 }
 .input-group-comp .form-control {
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 30px;
   background: transparent;
@@ -826,19 +872,19 @@ textarea.form-control {
     padding: 0px 12px;
   }
   .input-bas-comp label {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   .input-bas-comp .form-control {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   .input-group-comp .form-control {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   .input-group-comp span {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   .dropdown-comp {
@@ -903,9 +949,12 @@ select:focus,
 
 .vse_sm {
   padding: 33px;
-  height: 100vh;
-  background: #EBEBEB url(../../../../images/web-body-bg.png) top;
+  height: 100%;
+  background: url(../images/bg-web-res.png);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px;
 }
 
 .text-ellipsis {
@@ -999,8 +1048,6 @@ select:focus,
 
 .app_main_wrapper {
   max-width: 768px;
-  background: url(../images/vf-bg.png) no-repeat;
-  background-position: center;
 }
 
 .post_login .app_main_wrapper {
@@ -1154,7 +1201,7 @@ select:focus,
 
 .input_icon button {
   font-size: 16px;
-  color: #333333;
+  color: #999999;
 }
 
 .width50 {
@@ -1261,7 +1308,7 @@ hr {
   max-height: 80px !important;
   min-height: 21px !important;
   -webkit-line-clamp: 4 !important;
-  color: #333333;
+  color: #999999;
 }
 
 .app_alert_desc2 {
@@ -1598,6 +1645,16 @@ hr {
   border-top: 1px solid #333333;
 }
 
+/*error-message*/
+.error-message {
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5;
+  line-height: 22px;
+  margin-top: 5px;
+  text-align: left;
+}
+
 @media (min-width: 1024px) {
   .mt-minhed {
     margin-top: 60px;
@@ -1646,9 +1703,15 @@ hr {
     display: none !important;
   }
 }
-@media (max-height: 680px) {
+@media (max-height: 768px) {
   .mt-160 {
     margin-top: 100px;
+  }
+  .mt-res-100 {
+    margin-top: 100px;
+  }
+  .mt-res-80 {
+    margin-top: 80px;
   }
   .modal-dialog {
     max-width: none !important;
@@ -1689,11 +1752,12 @@ hr {
 .header .web-header-comp1 nav {
   width: 100%;
   padding: 0px;
+  height: 70px;
 }
 .header .web-header-comp1 nav .nav-link {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color: #333333;
+  color: #999999;
   padding: 29px 30px;
 }
 .header .web-header-comp1 nav .nav-link .active {
@@ -1741,6 +1805,9 @@ hr {
   .web-header-comp1 {
     display: none;
   }
+  .onb-vfl-weblogo {
+    display: none;
+  }
   .mobile-header-comp2 {
     display: block !important;
     width: 100%;
@@ -1765,6 +1832,17 @@ hr {
   .mobile-header-comp2 .moble-header .backarrow img {
     height: 20px;
     width: 20px;
+  }
+  .mobile-header-comp2 .moble-header .onboard-header {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0px;
+  }
+  .mobile-header-comp2 .moble-header .onboard-header img {
+    border: 3px solid #fff;
+    border-radius: 40px;
   }
 }
 .fixed_footer {
@@ -1809,7 +1887,7 @@ hr {
 }
 .footer_menu .footer_menu_item span {
   font-size: 10px;
-  color: #AAAAAA;
+  color: #999999;
   margin-top: -7px;
 }
 .footer_menu .footer_menu_item > img {
@@ -1865,7 +1943,7 @@ hr {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 26px;
-  color: #333333;
+  color: #999999;
   letter-spacing: 1.2px;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1974,7 +2052,7 @@ hr {
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.5px;
-  color: #333333;
+  color: #999999;
 }
 .summary-card-details .summary-regu-txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
@@ -1982,14 +2060,14 @@ hr {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.5px;
-  color: #333333;
+  color: #999999;
 }
 .summary-card-details .summarry-fina-txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
+  color: #999999;
 }
 
 .success-comp .success-img img {
@@ -2058,7 +2136,7 @@ hr {
   .card-comp001 .card .card-insec .card-body .card-title {
     font-size: 16px;
     line-height: 18px;
-    color: #333333;
+    color: #999999;
     letter-spacing: 0.5px;
   }
 }
@@ -2128,7 +2206,7 @@ hr {
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.5px;
-    color: #333333;
+    color: #999999;
   }
   .summary-card-details .summary-regu-txt {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
@@ -2136,14 +2214,14 @@ hr {
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.5px;
-    color: #333333;
+    color: #999999;
   }
   .summary-card-details .summarry-fina-txt {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
+    color: #999999;
   }
   .success-comp .success-img img {
     width: 80px;
@@ -2250,7 +2328,7 @@ hr {
 }
 .bottom_modal .modal-dialog .modal-head h3 {
   font-size: 13px;
-  color: #333333;
+  color: #999999;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -2366,7 +2444,7 @@ hr {
   width: 26px;
   height: 5px;
   border-radius: 20px;
-  background: #333333;
+  background: #999999;
 }
 
 .modal-backdrop.show {
@@ -2617,4 +2695,15 @@ hr {
 .p-note {
   font-size: 12px;
   color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .vfm-bg-comp {
+    width: 100%;
+    background: transparent;
+  }
+  .vfm-bg-comp p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }/*# sourceMappingURL=custom.css.map */

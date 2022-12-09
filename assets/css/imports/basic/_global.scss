@@ -73,9 +73,13 @@ select:focus,
     background: none !important;
 }
 .vse_sm{
-    padding:33px;height: 100vh;
-    background: #EBEBEB url(../../../../images/web-body-bg.png) top;
+    padding: 33px;
+    height: 100%;
+    background: url(../images/bg-web-res.png);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
 }
 
 .text-ellipsis {
@@ -169,8 +173,8 @@ select:focus,
 .app_main_wrapper {
     max-width: 768px;
     //height: calc(100vh - 80px);
-    background: url(../images/vf-bg.png) no-repeat;
-    background-position: center;
+    //background: url(../images/vf-bg.png) no-repeat;
+    //background-position: center;
 }
 
 .post_login {
@@ -727,11 +731,17 @@ text-overflow: ellipsis;
     }
 }
 
-.dark-stroke
-{
-    border-top: 1px solid #333333;
-}
+.dark-stroke{border-top: 1px solid #333333;}
 
+/*error-message*/
+.error-message{
+    font-family: $vodafonlt-light;
+    font-size: 16px; 
+    letter-spacing: 0.5;
+    line-height: 22px;
+    margin-top: 5px;
+    text-align: left;
+}
 
 @media (min-width: 1024px) {
 .mt-minhed {margin-top: 60px;}
@@ -767,8 +777,10 @@ text-overflow: ellipsis;
     .res-display-none{display: none !important;}
 }
 
-@media (max-height: 680px) {
+@media (max-height: 768px) {
     .mt-160 {margin-top: 100px;}
+    .mt-res-100 {margin-top: 100px;}
+    .mt-res-80 {margin-top: 80px;}
     .modal-dialog{max-width:none !important;}
     .mt-res-45 {margin-top: 45px !important;}
 }

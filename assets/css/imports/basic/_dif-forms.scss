@@ -294,6 +294,7 @@ textarea.form-control {
         padding:0px 20px 0px 0px;
     }
     .form-control{
+        font-family: $vodafonlt-light;
         font-size:20px;
         line-height: 30px;
         background:transparent;
@@ -302,7 +303,6 @@ textarea.form-control {
         border-left:0px;
         border-bottom: 1px solid $border;
         border-radius: 0px !important;
-        @extend %vodafonlg-light;
     }
     .form-control:focus{
         border-bottom: 1px solid $primary;
@@ -370,16 +370,16 @@ textarea.form-control {
         .form-select {padding:0px 12px;}        
     }
     .input-bas-comp{
-        label{font-size: 20px; line-height: 22px;}
-        .form-control{font-size: 20px; line-height: 22px;}
+        label{font-size: 18px; line-height: 22px;}
+        .form-control{font-size: 18px; line-height:22px;}
      }
     .input-group-comp{
-        .form-control{font-size: 20px; line-height: 22px;}
-        span{font-size: 20px; line-height: 22px;}
+        .form-control{font-size:18px; line-height:22px;}
+        span{font-size:18px; line-height:22px;}
      }
      .dropdown-comp{
         width: 100%;
-        .btn-secondary{font-size:20px; line-height: 23px;}
-        .dropdown-item{font-size: 20px; line-height: 23px;}
+        .btn-secondary{font-size:20px; line-height:23px;}
+        .dropdown-item{font-size:20px; line-height:23px;}
     }
 }
