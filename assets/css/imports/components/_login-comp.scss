@@ -15,3 +15,13 @@
     font-size: 12px;
     color: #ccc;
 }
+@media (max-width: 768px) {
+    .vfm-bg-comp {
+        width:100%;
+        background:transparent;    
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

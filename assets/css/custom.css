@@ -872,19 +872,19 @@ textarea.form-control {
     padding: 0px 12px;
   }
   .input-bas-comp label {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   .input-bas-comp .form-control {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   .input-group-comp .form-control {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   .input-group-comp span {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
   .dropdown-comp {
@@ -2649,4 +2649,15 @@ hr {
 .p-note {
   font-size: 12px;
   color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .vfm-bg-comp {
+    width: 100%;
+    background: transparent;
+  }
+  .vfm-bg-comp p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }/*# sourceMappingURL=custom.css.map */
