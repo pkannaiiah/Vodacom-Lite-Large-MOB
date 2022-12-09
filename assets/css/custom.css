@@ -2231,6 +2231,18 @@ hr {
     line-height: 25px;
     letter-spacing: 0.5px;
   }
+  .success-comp .success-xsma-txt {
+    border: 0px solid red;
+  }
+  .success-comp .success-xlar-text {
+    border: 0px solid red;
+  }
+  .success-comp .success-lar-text {
+    border: 0px solid red;
+  }
+  .success-comp .success-smal-text {
+    border: 0px solid red;
+  }
   .card-comp003 {
     padding: 20px;
     flex: 1 0 48%;
