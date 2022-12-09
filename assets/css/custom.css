@@ -439,16 +439,14 @@ h5 {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 30px;
-  color: #999999;
+  color: #333333;
   letter-spacing: 1.2px;
 }
 
 @media (max-width: 992px) {
   .cont-heading {
-    font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 23px;
-    color: #999999;
     letter-spacing: 0.5px;
   }
   h1 {
@@ -1663,6 +1661,13 @@ hr {
   margin-top: 36px;
 }
 
+.disabled {
+  color: #999999 !important;
+}
+.disabled h5 {
+  color: #999999 !important;
+}
+
 @media (min-width: 1024px) {
   .mt-minhed {
     margin-top: 60px;
@@ -1770,7 +1775,7 @@ hr {
 .header .web-header-comp1 nav .nav-link {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color: #999999;
+  color: #333333;
   padding: 29px 30px;
 }
 .header .web-header-comp1 nav .nav-link .active {
@@ -1960,7 +1965,7 @@ hr {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 26px;
-  color: #999999;
+  color: #333333;
   letter-spacing: 1.2px;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1983,7 +1988,7 @@ hr {
 .card-comp002 .card .card-insec {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 15px 10px;
 }
 .card-comp002 .card .card-insec h5 {
   font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif !important;
@@ -2152,7 +2157,7 @@ hr {
   .card-comp001 .card .card-insec .card-body .card-title {
     font-size: 16px;
     line-height: 18px;
-    color: #999999;
+    color: #333333;
     letter-spacing: 0.5px;
   }
 }
@@ -2175,9 +2180,9 @@ hr {
     align-items: center;
   }
   .card-comp002 .card .card-insec h5 {
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
+    font-size: 20px !important;
+    line-height: 22px !important;
+    letter-spacing: 0.5px !important;
   }
   .card-comp002 .card .card-insec .bun-supp-txt {
     font-size: 14px;
