@@ -2,12 +2,29 @@
     width: 439px;
     background: #fff;
     border-radius: 6px;
-    padding: 40px;
+    padding: 20px;
     margin: 0 auto;
 
     p {
         font-size: 24px;
         line-height: 30px;
+        font-family: $vodafonlt-light;
+        letter-spacing: 1.52px;
+    }
+}
+.vfm-bg-comp1 {
+    width: 439px;
+    background: #fff;
+    border-radius: 6px;
+    margin: 0 auto;
+
+    p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .summary-card-details
+    {
+        padding: 40px;
     }
 }
 
@@ -22,6 +39,14 @@
 }
 @media (max-width: 768px) {
     .vfm-bg-comp {
+        width:100%;
+        background:transparent;    
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .vfm-bg-comp1 {
         width:100%;
         background:transparent;    
         p {
