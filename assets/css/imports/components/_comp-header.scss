@@ -74,7 +74,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .web-header-comp1{display: none;}
     .onb-vfl-weblogo{display: none;}
     .mobile-header-comp2{
@@ -82,10 +82,10 @@
         width: 100%;
         .moble-header{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background: $primary;
-        padding: 10px 20px;
-        height: 50px;
+        padding: 0px 20px;
+        height: 38px;
         vertical-align:middle;
         align-items: center;
         width: 100%;
@@ -99,13 +99,11 @@
     .onboard-header{
         text-align: center;
         position: absolute;
-        width: 100%;
-        top: 10px;
-        left: 0px;
-        img{
-            border: 3px solid #fff;
-            border-radius: 40px;
-        }
+        width: auto;
+        top: 7px;
+        border:4px solid #fff;
+        border-radius: 40px;
+        img{width:40px;height:40px;}
     }
     }
 }

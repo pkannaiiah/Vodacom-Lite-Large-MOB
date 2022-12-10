@@ -1708,6 +1708,7 @@ hr {
     padding: 0px 20px;
   }
   .vse_sm {
+    background: #fff;
     padding: 20px;
     height: calc(100vh - 0px);
     margin-top: 50px;
@@ -1723,7 +1724,7 @@ hr {
     display: none !important;
   }
 }
-@media (max-height: 768px) {
+@media (max-height: 640px) {
   .mt-160 {
     margin-top: 100px;
   }
@@ -1731,7 +1732,7 @@ hr {
     margin-top: 100px;
   }
   .mt-res-80 {
-    margin-top: 80px;
+    margin-top: 134px;
   }
   .modal-dialog {
     max-width: none !important;
@@ -1825,7 +1826,7 @@ hr {
   width: 84px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .web-header-comp1 {
     display: none;
   }
@@ -1838,10 +1839,10 @@ hr {
   }
   .mobile-header-comp2 .moble-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background: #E60000;
-    padding: 10px 20px;
-    height: 50px;
+    padding: 0px 20px;
+    height: 38px;
     vertical-align: middle;
     align-items: center;
     width: 100%;
@@ -1860,13 +1861,14 @@ hr {
   .mobile-header-comp2 .moble-header .onboard-header {
     text-align: center;
     position: absolute;
-    width: 100%;
-    top: 10px;
-    left: 0px;
+    width: auto;
+    top: 7px;
+    border: 4px solid #fff;
+    border-radius: 40px;
   }
   .mobile-header-comp2 .moble-header .onboard-header img {
-    border: 3px solid #fff;
-    border-radius: 40px;
+    width: 40px;
+    height: 40px;
   }
 }
 .fixed_footer {
@@ -2751,7 +2753,7 @@ hr {
   width: 439px;
   background: #fff;
   border-radius: 6px;
-  padding: 20px;
+  padding: 60px 20px;
   margin: 0 auto;
 }
 .vfm-bg-comp p {
@@ -2800,17 +2802,18 @@ hr {
   margin-top: 0px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .web-top-header {
     display: block !important;
   }
   .vfm-bg-comp {
     width: 100%;
     background: transparent;
+    padding: 0px 10px;
   }
   .vfm-bg-comp p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 22px;
   }
   .vfm-bg-comp1 {
     width: 100%;
@@ -2818,17 +2821,21 @@ hr {
   }
   .vfm-bg-comp1 p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 22px;
   }
   .p-note {
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.5px;
     color: #666666;
+    margin-top: 35px;
   }
   .lgn-conf-bold-lbl {
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 0.5px;
+  }
+  .lang-res-mt {
+    margin-top: 40px;
   }
 }/*# sourceMappingURL=custom.css.map */
