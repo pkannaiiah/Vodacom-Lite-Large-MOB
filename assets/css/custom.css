@@ -426,7 +426,7 @@ h5 {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   color: #333333;
   line-height: 22px;
-  letter-spacing: 0.5;
+  letter-spacing: 0.5px;
 }
 
 .cont-heading {
@@ -1073,7 +1073,7 @@ select:focus,
 }
 
 .white_detail_card {
-  background-color: #FFF;
+  background-color: #FFFFFF;
   justify-content: space-between;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1019607843);
@@ -1084,7 +1084,7 @@ select:focus,
 }
 
 .white_detail_card_noflex {
-  background-color: #FFF;
+  background-color: #FFFFFF;
   justify-content: space-between;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1019607843);
@@ -1101,7 +1101,7 @@ select:focus,
   justify-content: space-between;
   background: #0C30A8 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1019607843);
-  color: #FFF;
+  color: #FFFFFF;
   border-radius: 13px;
   padding: 15px 10px;
 }
@@ -1338,7 +1338,7 @@ hr {
   position: absolute;
   top: -15px;
   left: 120px;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   padding: 0px 10px;
 }
 
@@ -1519,7 +1519,7 @@ hr {
   position: absolute;
   top: -10px;
   right: -10px;
-  background: #fff;
+  background: #FFFFFF;
 }
 .offer-icon-tag img {
   width: 25px !important;
@@ -1667,7 +1667,11 @@ hr {
 }
 
 .language-comp select {
-  padding: 2px 4px;
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 0px 4px;
+  border: 1px solid #333;
+  border-radius: 4px;
 }
 
 @media (min-width: 1024px) {
@@ -1675,7 +1679,7 @@ hr {
     margin-top: 60px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .header .header_left {
     left: 16px !important;
   }
@@ -1708,7 +1712,7 @@ hr {
     padding: 0px 20px;
   }
   .vse_sm {
-    background: #fff;
+    background: #FFFFFF;
     padding: 20px;
     height: calc(100vh - 0px);
     margin-top: 50px;
@@ -1722,6 +1726,9 @@ hr {
   }
   .res-display-none {
     display: none !important;
+  }
+  .language-comp select {
+    background-color: #FFFFFF;
   }
 }
 @media (max-height: 640px) {

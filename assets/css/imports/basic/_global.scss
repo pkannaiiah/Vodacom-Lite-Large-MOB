@@ -221,9 +221,9 @@ select:focus,
 }
 
 .white_detail_card {
-    background-color: #FFF;
+    background-color: $white;
     justify-content: space-between;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $white 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 20px #0000001A;
     border-radius: 13px;
     padding: 15px;
@@ -231,9 +231,9 @@ select:focus,
     align-items: center;
 }
 .white_detail_card_noflex {
-    background-color: #FFF;
+    background-color: $white;
     justify-content: space-between;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $white 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 20px #0000001A;
     border-radius: 13px;
     align-items: center;
@@ -248,7 +248,7 @@ select:focus,
     justify-content: space-between;
     background: #0C30A8 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 20px #0000001A;
-    color: #FFF;
+    color: $white;
     border-radius: 13px;
     padding: 15px 10px;
 }
@@ -484,7 +484,7 @@ hr {
     position: absolute;
     top:-15px;
     left:120px;
-    background-color: #FFF;
+    background-color: $white;
     padding: 0px 10px;
 }
 .txt_left
@@ -664,7 +664,7 @@ hr {
 
 .offer-icon-tag{
     position:absolute;top: -10px;right: -10px;
-    background:#fff;
+    background:$white;
     img{width:25px!important;height:20px!important;padding:0px!important;}
 }
 
@@ -762,13 +762,19 @@ text-overflow: ellipsis;
 }
 
 .language-comp{
-    select{padding: 2px 4px;}
+    select{
+        font-family:$vodafonlt-light;
+        font-size:20px;
+        padding: 0px 4px;
+        border:1px solid #333;
+        border-radius:4px;
+    }
 }
 @media (min-width: 1024px) {
 .mt-minhed {margin-top: 60px;}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .header .header_left {
         left: 16px !important;
     }
@@ -791,10 +797,15 @@ text-overflow: ellipsis;
     body {font-size:14px;line-height:0.5 !important;line-height:16px;}
     .vse_lg {padding:0px 25px;}
     .vse_md {padding:0px 20px;}
-    .vse_sm {background:#fff;padding:20px;height:calc(100vh - 0px);margin-top:50px;}
+    .vse_sm {background:$white;padding:20px;height:calc(100vh - 0px);margin-top:50px;}
     .app_main_wrapper {border-left: 0px;border-right: 0px;}
     .mt-res-25 {margin-top:25px !important;}
     .res-display-none{display:none !important;}
+    .language-comp{
+        select{
+            background-color:$white;
+        }
+    }
 }
 
 @media (max-height: 640px) {
