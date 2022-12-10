@@ -397,18 +397,17 @@
     }
     
     // success page css end
-
+    .data-pack-comp {
     .card-comp003 {    
         padding: 20px;
         flex: 1 0 48.8%;
         .card_heading
         {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 18px;
             letter-spacing: 0.5px;
         }
-        .card_main_txt
-        {
+        .card_main_txt{
             font-size: 28px;
             line-height: 32px;
             letter-spacing: 0.5px;
@@ -420,6 +419,7 @@
                 width: 28px;
             }
 
+}
 }
 .vfmcard-bg-comp {
     width:100%; 

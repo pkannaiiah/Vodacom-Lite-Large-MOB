@@ -35,10 +35,16 @@
 .primary_bg {
     @extend %primary-bg;
 }
+.light-gray-bg{
+    background-color: $light-gray !important;
+}
 
 .light_gray_bg{
     background: $light-gray;
 }
 .dark_green{
     color: $dark-green !important;
+}
+.light-gray{
+    color:$light-gray;
 }
