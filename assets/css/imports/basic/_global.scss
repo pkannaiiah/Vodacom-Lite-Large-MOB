@@ -73,13 +73,13 @@ select:focus,
     background: none !important;
 }
 .vse_sm{
-    padding: 33px;
-    height: 100%;
+    padding:24px 33px;
     background: url(../images/bg-web-res.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 70px;
+    height: 100vh;
 }
 
 .text-ellipsis {
@@ -154,6 +154,9 @@ select:focus,
 .pt-60 {
     padding-top: 60px;
 }
+.pt-45 {
+    padding-top: 45px;
+}
 
 .pb-76 {
     padding-bottom: 76px;
@@ -218,9 +221,9 @@ select:focus,
 }
 
 .white_detail_card {
-    background-color: #FFF;
+    background-color: $white;
     justify-content: space-between;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $white 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 20px #0000001A;
     border-radius: 13px;
     padding: 15px;
@@ -228,9 +231,9 @@ select:focus,
     align-items: center;
 }
 .white_detail_card_noflex {
-    background-color: #FFF;
+    background-color: $white;
     justify-content: space-between;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $white 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 20px #0000001A;
     border-radius: 13px;
     align-items: center;
@@ -245,7 +248,7 @@ select:focus,
     justify-content: space-between;
     background: #0C30A8 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 20px #0000001A;
-    color: #FFF;
+    color: $white;
     border-radius: 13px;
     padding: 15px 10px;
 }
@@ -481,7 +484,7 @@ hr {
     position: absolute;
     top:-15px;
     left:120px;
-    background-color: #FFF;
+    background-color: $white;
     padding: 0px 10px;
 }
 .txt_left
@@ -661,7 +664,7 @@ hr {
 
 .offer-icon-tag{
     position:absolute;top: -10px;right: -10px;
-    background:#fff;
+    background:$white;
     img{width:25px!important;height:20px!important;padding:0px!important;}
 }
 
@@ -757,51 +760,43 @@ text-overflow: ellipsis;
     color: $dark-gray !important;
     h5{color: $dark-gray !important;}
 }
-.mtmb-160
-{
-    margin: 160px 0px;
-}
-@media (min-width: 1024px) {
-.mt-minhed {margin-top: 60px;}
-}
 
-@media (min-width: 768px) {
-    .header .header_left {
-        left: 16px !important;
-    }
-    .header .header_actions {
-        right: 16px !important;
-    }
-    .header .header_container,
-    .app_main_wrapper {
-        max-width: 768px !important;
-    }
-    .side_menu_wrapper {
-        width: 700px !important;
+.language-comp{
+    select{
+        font-family:$vodafonlt-light;
+        font-size:20px;
+        padding: 0px 4px;
+        border:1px solid #333;
+        border-radius:4px;
     }
 }
-
 @media (max-width: 1024px) {
-    .navbar-toggler{display: none;}
-}
-@media (max-width: 767.98px) {
-    body {
-        font-size: 14px;
-        line-height: 0.5 !important;
-        line-height: 16px;
-    }
-    .vse_lg {padding: 0px 25px;}
-    .vse_md {padding: 0px 20px;}
-    .vse_sm {padding: 20px;height: calc(100vh - 0px);margin-top:50px;}
-    .app_main_wrapper {border-left: 0px;border-right: 0px;}
-    .mt-res-25 {margin-top: 25px !important;}
-    .res-display-none{display: none !important;}
+.mt-minhed {margin-top: 60px;}
+.navbar-toggler{display: none;}
 }
 
-@media (max-height: 768px) {
+@media (min-width: 767.98px) {
+    .header .header_left {left: 16px !important;}
+    .header .header_actions {right: 16px !important;}
+    .header .header_container,
+    .app_main_wrapper {max-width: 768px !important;}
+    .side_menu_wrapper {width: 700px !important;}
+}
+
+@media (max-width: 767.98px) {
+    body {font-size:14px;line-height:0.5 !important;line-height:16px;}
+    .vse_lg {padding:0px 25px;}
+    .vse_md {padding:0px 20px;}
+    .vse_sm {background:$white;padding:20px;height:calc(100vh - 0px);margin-top:50px;}
+    .app_main_wrapper {border-left: 0px;border-right: 0px;}
+    .mt-res-25 {margin-top:25px !important;}
+    .res-display-none{display:none !important;}
+    .language-comp{
+        select{ background-color:$white;}
+    }
     .mt-160 {margin-top: 100px;}
     .mt-res-100 {margin-top: 100px;}
-    .mt-res-80 {margin-top: 80px;}
-    .modal-dialog{max-width:none !important;}
-    .mt-res-45 {margin-top: 45px !important;}
+    .mt-res-80 {margin-top: 100px;}
+    .modal-dialog {max-width: none!important;}
+    .mt-res-45 {margin-top: 45px!important;}
 }

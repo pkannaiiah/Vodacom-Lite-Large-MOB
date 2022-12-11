@@ -50,7 +50,7 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Balances</a>
@@ -59,18 +59,17 @@
                         <a class="nav-link" href="#">Just 4 You</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Buy</a>
+                        <a class="nav-link active" href="#">Buy</a>
                       </li>
                     </ul>
                   </div>
-
-                  <span class="navbar-text numb-text me-2">
-                    058 345 678
-                  </span>
-
-                  <span class="navbar-text">
-                    <img src="assets/images/burger-menu.svg" alt="" title=""/>
-                  </span>
+                  
+                  <div>
+                    <span class="navbar-text numb-text me-2"> 058 345 678 </span>
+                    <span class="navbar-text">
+                      <img src="assets/images/burger-menu.svg" alt="" title=""/>
+                    </span>
+                  </div>
 
                 </div>
               </nav>
@@ -78,7 +77,7 @@
 
               <!--mobile header-->
         <div class="mobile-header-comp2">
-            <div class="moble-header">
+            <div class="moble-header justify-content-between">
             <div class="backarrow">
                 <a href="">
                     <img src="assets/images/back-arrow.svg" alt="" title="" />
@@ -106,14 +105,45 @@
                     <a href="#" class="custom_btn_primary_outline border-rad20 back_btn"> Back </a>
                     <!--label> Buy for 058 777 777 </label-->
                 </div>
-                <div class="d-flex justify-content-between flex-wrap gap-3">
-                  <!-- Card start-->
-                    <div class="card-comp003">
-                      <div class="card_heading">Airtime Bundle 01</div>
-                      <div class="d-flex justify-content-between">
-                        <label class="card_main_txt">M150.00 left</label>
-                        <img src="assets/images/home_card_icon.svg">
-                      </div>
+
+                      <div class="mb-4 pt-2">
+                        <div class="cont-heading mb-3"> Who are you buying for? </div>
+
+                        <div class="dropdown dropdown-comp mb-2">
+                          <button class="btn btn-secondary dropdown-toggle dropdownmenu001 text-left" type="button" data-bs-toggle="dropdown" data-bs-target="#exampleModal" aria-expanded="false">
+                              058 345 678, (Myself)
+                          </button>
+                       
+                          <ul class="dropdown-menu dropdown-menu-dark dropdown" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <!--div class="drop-down-bg"></div-->
+                              <li class="check-icon list">
+                                  <a class="dropdown-item" href="#">058 345 678, (Myself) </a>
+                                  <img src="assets/images/tick-vector.svg" alt="" title="" />
+                              </li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="list">
+                                  <a class="dropdown-item" href="#">Insert another number </a>
+                              </li>
+                            <li class="mt-2 mb-2">
+                              <a class="dropdown-item active" href="#">Recent numbers:</a>
+                          </li>
+                            <li class="list delete-icon">
+                              <a class="dropdown-item" href="#">058 444 444 </a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="list delete-icon">
+                              <a class="dropdown-item" href="#">058 333 333</a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                          <li><hr class="dropdown-divider"></li>
+                            <li class="list d-flex justify-content-between delete-icon">
+                              <a class="dropdown-item" href="#">058 555 555</a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                          </ul>
+                        </div>
+
                     </div>
                   <!-- Card end-->
                    <!-- Card start-->
