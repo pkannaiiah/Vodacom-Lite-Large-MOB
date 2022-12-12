@@ -758,6 +758,7 @@ text-overflow: ellipsis;
 
 .disabled{
     color: $dark-gray !important;
+    cursor: help !important;
     h5{color: $dark-gray !important;}
 }
 
@@ -778,6 +779,7 @@ text-overflow: ellipsis;
     -webkit-filter: blur(2.5px);
   }
 // background blur dropdown end
+.box-shadow-none{box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1) !important;}
 
 @media (max-width: 1024px) {
 .mt-minhed {margin-top: 60px;}

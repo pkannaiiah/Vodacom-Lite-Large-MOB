@@ -35,6 +35,49 @@
     }
 }
 
+// class for buy bundles start
+.card-comp002 {
+    .card-group{
+        display: flex;
+        flex-wrap: wrap;
+    .card {
+        border-radius: 9px !important;
+        box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
+        border: 0px;
+        flex:0 0 32.5%;
+        cursor: pointer;
+
+        .card-body {
+            padding: 0px 10px !important;
+        }
+
+        .card-insec {
+            display: flex;
+            align-items: center;
+            padding:15px 10px;
+
+            h5 {
+                font-family: $vodafonrg-bold !important;
+                font-size: 28px;
+                line-height: 30px;
+                letter-spacing: 1.68px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .bun-supp-txt {
+                font-family: $vodafonlt-light;
+                font-size: 18px;
+                
+                line-height: 22px;
+                letter-spacing: 0.56px;
+                text-align: center;
+            }
+        }
+    }
+}
+}
+
 .card-comp003 {
     .card {
         border-radius: 9px !important;
@@ -71,82 +114,83 @@
     }
 }
 
-// class for buy bundles start
-
-.card-comp002 {
-    .card {
-        border-radius: 9px !important;
-        box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
-        border: 0px;
-        cursor: pointer;
-
-        .card-body {
-            padding: 0px 10px !important;
-        }
-
-        .card-insec {
-            display: flex;
-            align-items: center;
-            padding:15px 10px;
-
-            h5 {
-                font-family: $vodafonrg-bold !important;
-                font-size: 28px;
-                line-height: 30px;
-                letter-spacing: 1.68px;
-                text-align: center;
-                margin-bottom: 15px;
-            }
-
-            .bun-supp-txt {
-                font-family: $vodafonlt-light;
-                font-size: 18px;
-                
-                line-height: 22px;
-                letter-spacing: 0.56px;
-                text-align: center;
-            }
-        }
-    }
-}
-
-.data-pack-comp{
-    display: -webkit-box;
+.dflex-card-comp004{
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-}
-.card-comp003 {    
+.card-group {    
         background: $white;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
         border-radius: 12px;
         padding: 30px;
-        flex: 1 0 auto;
-        width: 48.8%;
-        .card_heading
-        {
+        flex: 0 0 48.8%;
+
+        .card_heading{
             font-family: $vodafonrg-bold;
             font-size: 18px;
             line-height: 24px;
             letter-spacing: 1px;
             margin-bottom: 7px;
         }
-        .card_main_txt
-        {
+
+        .card-cont{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+        .card_main_txt{
             font-family: $vodafonrg-regular;
             font-size: 32px;
             line-height: 30px;
             letter-spacing: 1.5px;
         }
-        img
-            {
+        img{
                 height: 36px;
                 width: 36px;
-                align-self: center;
             }
+        }
 
 }
+}
 
+.dflex-card-comp005{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+.card-group {    
+        background: $white;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        padding: 30px;
+        flex: 0 0 48.8%;
+
+        .card_heading{
+            font-family: $vodafonrg-bold;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+        }
+
+        .card-cont{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+        .card_main_txt{
+            font-family: $vodafonrg-regular;
+            font-size: 32px;
+            line-height: 30px;
+            letter-spacing: 1.5px;
+        }
+        img{
+                height: 36px;
+                width: 36px;
+            }
+        }
+
+}
+}
 // class for buy bundles end
 
 .vfmcard-bg-comp {
@@ -201,27 +245,24 @@
         font-size: 20px;
         line-height: 22px;
         letter-spacing: 0.5px;
-        color: $dark-gray;
+        color:$secondary;
     }
 
     .summary-regu-txt {
-        font-family: $vodafonrg-regular;
-        
+        font-family: $vodafonrg-regular;        
         font-size: 16px;
         line-height: 18px;
         letter-spacing: 0.5px;
-        color: $dark-gray;
+        color:$secondary;
     }
 
     .summarry-fina-txt {
-        font-family: $vodafonrg-regular;
-        
+        font-family: $vodafonrg-regular;        
         font-size: 18px;
         line-height: 21px;
-        color: $dark-gray;
+        color:$secondary;
     }
 }
-
 //summary card end
 
 // success page css start
@@ -314,14 +355,14 @@
         display: -webkit-box;
         justify-content: space-between;
         flex-wrap: wrap;
-
+        .card-group{
         .card {
             border-radius: 9px !important;
             box-shadow: 0 2px 4px 0px rgb(0 0 0 / 26%);
             border: 0px;
             flex: 1 0 auto;
             margin-bottom: 0px;
-            width: 48%;
+            flex:0 0 48.5%;
 
             .card-insec {
                 display: flex;
@@ -338,6 +379,7 @@
                 }
             }
         }
+    }
     }
 
     //Summary card start
@@ -381,7 +423,7 @@
             font-size: 20px;
             line-height: 22px;
             letter-spacing: 0.5px;
-            color: $dark-gray;
+            color: $secondary;
         }
 
         .summary-regu-txt {
@@ -389,14 +431,14 @@
             font-size: 16px;
             line-height: 18px;
             letter-spacing: 0.5px;
-            color: $dark-gray;
+            color: $secondary;
         }
 
         .summarry-fina-txt {
             font-family: $vodafonrg-regular;
             font-size: 18px;
             line-height: 21px;
-            color: $dark-gray;
+            color: $secondary;
         }
     }
     //Summary card end
@@ -432,31 +474,6 @@
         }
     }
     
-    // success page css end
-    .data-pack-comp {
-    .card-comp003 {    
-        padding: 20px;
-        flex: 1 0 48.8%;
-        .card_heading
-        {
-            font-size: 16px;
-            line-height: 18px;
-            letter-spacing: 0.5px;
-        }
-        .card_main_txt{
-            font-size: 28px;
-            line-height: 32px;
-            letter-spacing: 0.5px;
-            margin-top: 10px;
-        }
-        img
-            {
-                height: 28px;
-                width: 28px;
-            }
-
-}
-}
 .vfmcard-bg-comp {
     width:100%; 
     p {font-size:20px; line-height:22px;}
@@ -464,6 +481,78 @@
 
 .data-pack-comp{
 .card-comp003 {width: 100%;}
+}
+
+.dflex-card-comp004{
+.card-group {
+        padding: 30px;
+        flex: 0 0 100%;
+
+        .card_heading{
+            font-family: $vodafonrg-bold;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+        }
+
+        .card-cont{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+        .card_main_txt{
+            font-family: $vodafonrg-regular;
+            font-size: 32px;
+            line-height: 30px;
+            letter-spacing: 1.5px;
+        }
+        img{
+                height: 36px;
+                width: 36px;
+            }
+        }
+
+}
+}
+
+.dflex-card-comp005{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+.card-group {    
+        background: $white;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        padding: 30px;
+        flex: 0 0 100%;
+
+        .card_heading{
+            font-family: $vodafonrg-bold;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+        }
+
+        .card-cont{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+        .card_main_txt{
+            font-family: $vodafonrg-regular;
+            font-size: 32px;
+            line-height: 30px;
+            letter-spacing: 1.5px;
+        }
+        img{
+            height: 36px;
+            width: 36px;
+            }
+        }
+
+}
 }
 
 }

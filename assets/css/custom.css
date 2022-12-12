@@ -799,6 +799,7 @@ textarea.form-control {
   display: flex;
   justify-content: space-between;
   padding: 10px 25px;
+  align-items: center;
 }
 .dropdown-comp .btn.show {
   color: #666666 !important;
@@ -842,8 +843,8 @@ textarea.form-control {
   padding: 10px 25px;
 }
 .dropdown-comp .check-icon img {
-  height: 31px;
-  width: 31px;
+  height: 24px;
+  width: 24px;
 }
 .dropdown-comp .delete-icon {
   padding: 10px 35px;
@@ -894,6 +895,9 @@ textarea.form-control {
   .dropdown-comp .dropdown-item {
     font-size: 20px;
     line-height: 23px;
+  }
+  .dropdown-comp hr {
+    margin: 0px;
   }
 }
 * {
@@ -1669,6 +1673,7 @@ hr {
 
 .disabled {
   color: #999999 !important;
+  cursor: help !important;
 }
 .disabled h5 {
   color: #999999 !important;
@@ -1686,6 +1691,10 @@ hr {
   /* Add the blur effect */
   filter: blur(2.5px);
   -webkit-filter: blur(2.5px);
+}
+
+.box-shadow-none {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1) !important;
 }
 
 @media (max-width: 1024px) {
@@ -1809,6 +1818,9 @@ hr {
   display: none;
 }
 .header .mobile-header-comp3 {
+  display: none;
+}
+.header .mobile-header-comp4 {
   display: none;
 }
 
@@ -1940,6 +1952,43 @@ hr {
   .mobile-header-comp3 .language-comp select {
     background-color: #EBEBEB;
   }
+  .mobile-header-comp4 {
+    display: block !important;
+    width: 100%;
+  }
+  .mobile-header-comp4 .moble-header {
+    display: flex;
+    justify-content: center;
+    background: #E60000;
+    padding: 0px 20px;
+    height: 50px;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile-header-comp4 .moble-header label {
+    font-size: 20px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+  }
+  .mobile-header-comp4 .moble-header .backarrow img {
+    height: 20px;
+    width: 20px;
+  }
+  .mobile-header-comp4 .moble-header .onboard-header {
+    text-align: center;
+    position: absolute;
+    width: auto;
+    top: 7px;
+    border: 4px solid #FFFFFF;
+    border-radius: 40px;
+  }
+  .mobile-header-comp4 .moble-header .onboard-header img {
+    width: 40px;
+    height: 40px;
+  }
 }
 .fixed_footer {
   position: fixed;
@@ -2050,6 +2099,41 @@ hr {
   max-width: 100%;
 }
 
+.card-comp002 .card-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-comp002 .card-group .card {
+  border-radius: 9px !important;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.26);
+  border: 0px;
+  flex: 0 0 32.5%;
+  cursor: pointer;
+}
+.card-comp002 .card-group .card .card-body {
+  padding: 0px 10px !important;
+}
+.card-comp002 .card-group .card .card-insec {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+}
+.card-comp002 .card-group .card .card-insec h5 {
+  font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif !important;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 1.68px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.card-comp002 .card-group .card .card-insec .bun-supp-txt {
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.56px;
+  text-align: center;
+}
+
 .card-comp003 .card {
   border-radius: 9px !important;
   box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.26);
@@ -2086,67 +2170,76 @@ hr {
   max-width: 100%;
 }
 
-.card-comp002 .card {
-  border-radius: 9px !important;
-  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.26);
-  border: 0px;
-  cursor: pointer;
-}
-.card-comp002 .card .card-body {
-  padding: 0px 10px !important;
-}
-.card-comp002 .card .card-insec {
+.dflex-card-comp004 {
   display: flex;
-  align-items: center;
-  padding: 15px 10px;
-}
-.card-comp002 .card .card-insec h5 {
-  font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif !important;
-  font-size: 28px;
-  line-height: 30px;
-  letter-spacing: 1.68px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.card-comp002 .card .card-insec .bun-supp-txt {
-  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.56px;
-  text-align: center;
-}
-
-.data-pack-comp {
-  display: -webkit-box;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.card-comp003 {
+.dflex-card-comp004 .card-group {
   background: #FFFFFF;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   padding: 30px;
-  flex: 1 0 auto;
-  width: 48.8%;
+  flex: 0 0 48.8%;
 }
-.card-comp003 .card_heading {
+.dflex-card-comp004 .card-group .card_heading {
   font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 1px;
   margin-bottom: 7px;
 }
-.card-comp003 .card_main_txt {
+.dflex-card-comp004 .card-group .card-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.dflex-card-comp004 .card-group .card-cont .card_main_txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 32px;
   line-height: 30px;
   letter-spacing: 1.5px;
 }
-.card-comp003 img {
+.dflex-card-comp004 .card-group .card-cont img {
   height: 36px;
   width: 36px;
-  align-self: center;
+}
+
+.dflex-card-comp005 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dflex-card-comp005 .card-group {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 30px;
+  flex: 0 0 48.8%;
+}
+.dflex-card-comp005 .card-group .card_heading {
+  font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+.dflex-card-comp005 .card-group .card-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.dflex-card-comp005 .card-group .card-cont .card_main_txt {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+.dflex-card-comp005 .card-group .card-cont img {
+  height: 36px;
+  width: 36px;
 }
 
 .vfmcard-bg-comp {
@@ -2198,20 +2291,20 @@ hr {
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.5px;
-  color: #999999;
+  color: #333333;
 }
 .summary-card-details .summary-regu-txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.5px;
-  color: #999999;
+  color: #333333;
 }
 .summary-card-details .summarry-fina-txt {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #999999;
+  color: #333333;
 }
 
 .success-comp .success-img img {
@@ -2285,24 +2378,24 @@ hr {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .card-comp002 .card {
+  .card-comp002 .card-group .card {
     border-radius: 9px !important;
     box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.26);
     border: 0px;
     flex: 1 0 auto;
     margin-bottom: 0px;
-    width: 48%;
+    flex: 0 0 48.5%;
   }
-  .card-comp002 .card .card-insec {
+  .card-comp002 .card-group .card .card-insec {
     display: flex;
     align-items: center;
   }
-  .card-comp002 .card .card-insec h5 {
+  .card-comp002 .card-group .card .card-insec h5 {
     font-size: 20px !important;
     line-height: 22px !important;
     letter-spacing: 0.5px !important;
   }
-  .card-comp002 .card .card-insec .bun-supp-txt {
+  .card-comp002 .card-group .card .card-insec .bun-supp-txt {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.5px;
@@ -2342,20 +2435,20 @@ hr {
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.5px;
-    color: #999999;
+    color: #333333;
   }
   .summary-card-details .summary-regu-txt {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.5px;
-    color: #999999;
+    color: #333333;
   }
   .summary-card-details .summarry-fina-txt {
     font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 21px;
-    color: #999999;
+    color: #333333;
   }
   .success-comp .success-img img {
     width: 80px;
@@ -2377,25 +2470,6 @@ hr {
   .success-comp .success-smal-text {
     border: 0px solid red;
   }
-  .data-pack-comp .card-comp003 {
-    padding: 20px;
-    flex: 1 0 48.8%;
-  }
-  .data-pack-comp .card-comp003 .card_heading {
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0.5px;
-  }
-  .data-pack-comp .card-comp003 .card_main_txt {
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: 0.5px;
-    margin-top: 10px;
-  }
-  .data-pack-comp .card-comp003 img {
-    height: 28px;
-    width: 28px;
-  }
   .vfmcard-bg-comp {
     width: 100%;
   }
@@ -2405,6 +2479,68 @@ hr {
   }
   .data-pack-comp .card-comp003 {
     width: 100%;
+  }
+  .dflex-card-comp004 .card-group {
+    padding: 30px;
+    flex: 0 0 100%;
+  }
+  .dflex-card-comp004 .card-group .card_heading {
+    font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+  }
+  .dflex-card-comp004 .card-group .card-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .dflex-card-comp004 .card-group .card-cont .card_main_txt {
+    font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+  }
+  .dflex-card-comp004 .card-group .card-cont img {
+    height: 36px;
+    width: 36px;
+  }
+  .dflex-card-comp005 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .dflex-card-comp005 .card-group {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 30px;
+    flex: 0 0 100%;
+  }
+  .dflex-card-comp005 .card-group .card_heading {
+    font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+  }
+  .dflex-card-comp005 .card-group .card-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .dflex-card-comp005 .card-group .card-cont .card_main_txt {
+    font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+  }
+  .dflex-card-comp005 .card-group .card-cont img {
+    height: 36px;
+    width: 36px;
   }
 }
 @media (max-width: 320px) {

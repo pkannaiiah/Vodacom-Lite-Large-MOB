@@ -1,3 +1,9 @@
-<svg id="Vector" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
-  <path id="Path" d="M18.319,0,5.637,12.683,0,7.046" transform="translate(6.458 8.63)" fill="none" stroke="#2fb650" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Vector" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 31 31" style="enable-background:new 0 0 31 31;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#2FB650;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path id="Path" class="st0" d="M30,8.6L17.3,21.3l-5.6-5.6"/>
 </svg>

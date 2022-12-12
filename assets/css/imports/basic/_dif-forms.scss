@@ -317,7 +317,12 @@ textarea.form-control {
 .dropdown-comp{
     font-family: $vodafonlt-light;
     width: 70%;
-    .list{display: flex; justify-content: space-between; padding:10px 25px;}
+    .list{
+        display: flex; 
+        justify-content: space-between; 
+        padding:10px 25px;
+        align-items: center;
+    }
     .btn.show{
         color: $fuldark-gray !important;
         background-color:$white !important;
@@ -346,7 +351,7 @@ textarea.form-control {
     .check-icon{
         align-items: center;
         padding:10px 25px;
-        img{height:31px; width:31px;}
+        img{height:24px; width:24px;}
     }
     .delete-icon{
         padding:10px 35px;
@@ -378,5 +383,6 @@ textarea.form-control {
         width: 100%;
         .btn-secondary{font-size:20px; line-height:23px;}
         .dropdown-item{font-size:20px; line-height:23px;}
+        hr{margin:0px;}
     }
 }

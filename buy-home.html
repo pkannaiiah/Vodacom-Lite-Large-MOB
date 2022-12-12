@@ -17,15 +17,20 @@
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css" />
     <!--Custom css-->
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <style>
+      .modal-popup{
+        background: rgba(0, 0, 0, 0.6);
+        background-size: cover;
+        z-index: 99999;
+      }
+    </style>
 </head>
 
 <body>
 
   <div class="body_container">
 
-    <header class="header">
-        
-        
+    <header class="header"> 
         <div class="header_container flex_grp_center">
             
             <!--web header-->
@@ -43,7 +48,7 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Balances</a>
@@ -52,7 +57,7 @@
                         <a class="nav-link" href="#">Just 4 You</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Buy</a>
+                        <a class="nav-link active" href="#">Buy</a>
                       </li>
                     </ul>
                   </div>
@@ -71,7 +76,7 @@
               <!--mobile header-->
         <div class="mobile-header-comp2">
             <div class="moble-header justify-content-between">
-            <div>
+            <div class="backarrow">
                 <a href="">
                     <img src="assets/images/back-arrow.svg" alt="" title="" />
                 </a>
@@ -92,44 +97,86 @@
 
     <section class="app_main_wrapper mt-minhed mt-res-45">    
 
-      <div class="vse_sm light-gray-bg">
-        
-        <div class="mb-4 mt-2 res-display-none backbtn-comp">
-          <a href="#" class="custom_btn_primary_outline border-rad20 back_btn"> Back </a>
-          <!-- <label> Buy for 058 777 777 </label> -->
-      </div>
-                    <div class="mt-3">
-                        <div class="cont-heading mb-3 pt-2"> Please select a category</div>
-                        <div class="card-group card-comp001 gap-2">
-                            <div class="card">
-                                <div class="card-insec">
-                              <img src="assets/images/buy_video.svg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Video</h5>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-insec">
-                                <img src="assets/images/buy_voice.svg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Voice</h5>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-insec">
-                                <img src="assets/images/buy_social.svg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Social <br/>
-                                    Tickets </h5>
-                              </div>
-                            </div>
-                            </div>
+                <div class="vse_sm light-gray-bg">
+                  
+                  <div class="mb-4 mt-2 res-display-none backbtn-comp">
+                    <a href="#" class="custom_btn_primary_outline border-rad20 back_btn"> Back </a>
+                    <!--label> Buy for 058 777 777 </label-->
+                </div>
 
-                          </div>
+                      <div class="mb-4 pt-2">
+                        <div class="cont-heading mb-3"> Who are you buying for? </div>
+
+                        <div class="dropdown dropdown-comp mb-2">
+                          <button class="btn btn-secondary dropdown-toggle dropdownmenu001 text-left" type="button" data-bs-toggle="dropdown" data-bs-target="#exampleModal" aria-expanded="false">
+                              058 345 678, (Myself)
+                          </button>
+                       
+                          <ul class="dropdown-menu dropdown-menu-dark dropdown" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <!--div class="drop-down-bg"></div-->
+                              <li class="check-icon list">
+                                  <a class="dropdown-item" href="#">058 345 678, (Myself) </a>
+                                  <img src="assets/images/tick-vector.svg" alt="" title="" />
+                              </li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="list">
+                                  <a class="dropdown-item" href="#">Insert another number </a>
+                              </li>
+                            <li class="mt-2 mb-2">
+                              <a class="dropdown-item active" href="#">Recent numbers:</a>
+                          </li>
+                            <li class="list delete-icon">
+                              <a class="dropdown-item" href="#">058 444 444 </a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="list delete-icon">
+                              <a class="dropdown-item" href="#">058 333 333</a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                          <li><hr class="dropdown-divider"></li>
+                            <li class="list d-flex justify-content-between delete-icon">
+                              <a class="dropdown-item" href="#">058 555 555</a>
+                              <img src="assets/images/delete-icon.svg" alt="" title="" />
+                          </li>
+                          </ul>
+                        </div>
+
                     </div>
-                    
+
+                    <div class="dflex-card-comp004 gap-3">
+
+                   <!-- Card start-->
+                   <div class="card-group">
+                    <div class="card_heading">Any time data 01</div>
+                    <div class="card-cont">
+                      <div class="card_main_txt">9.64 GB left</div>
+                      <img src="assets/images/home_card_icon2.svg">
+                    </div>
+                  </div>
+                <!-- Card end-->
+                
+                <div class="card-group">
+                  <div class="card_heading">Any time voice 01</div>
+                  <div class="card-cont">
+                    <div class="card_main_txt">1050m 34s left</div>
+                    <img src="assets/images/home_card_icon3.svg">
+                  </div>
+                </div>
+              <!-- Card end-->
+              
+              <div class="card-group">
+                <div class="card_heading">Any time SMS Bundle 01</div>
+                <div class="card-cont">
+                  <div class="card_main_txt">28 SMSs left</div>
+                  <img src="assets/images/home_card_icon4.svg">
+                </div>
+              </div>
+            <!-- Card end-->
+          </div>
+
+
+                </div>                    
                 </div><!--vse_sm-->
           
     </section>
@@ -167,7 +214,7 @@
 </div><!--body_container-->
 
     <!--js-->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
