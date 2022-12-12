@@ -772,7 +772,7 @@ textarea.form-control {
   padding: 0px 20px 0px 0px;
 }
 .input-group-comp .form-control {
-  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 30px;
   background: transparent;
@@ -864,7 +864,7 @@ textarea.form-control {
   top: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .cs_select .form-select {
     padding: 0px 12px;
   }
@@ -2030,6 +2030,42 @@ hr {
   margin-top: 10px;
 }
 .card-comp001 .card .card-insec .card-body .card-title {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #333333;
+  letter-spacing: 1.2px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+}
+
+.card-comp003 .card {
+  border-radius: 9px !important;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.26);
+  border: 0px;
+  cursor: pointer;
+}
+.card-comp003 .card .card-insec {
+  display: flex;
+  align-items: center;
+}
+.card-comp003 .card .card-insec img {
+  width: 62px;
+  height: 72px;
+  margin: 34px 20px 34px 34px;
+}
+.card-comp003 .card .card-insec .card-body {
+  flex: 0 0 auto;
+  padding: 0px;
+  text-align: center;
+  margin-top: 10px;
+}
+.card-comp003 .card .card-insec .card-body .card-title {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 26px;

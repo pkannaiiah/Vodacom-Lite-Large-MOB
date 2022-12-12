@@ -294,7 +294,7 @@ textarea.form-control {
         padding:0px 20px 0px 0px;
     }
     .form-control{
-        font-family: $vodafonlt-light;
+        font-family: $vodafonrg-regular;
         font-size:20px;
         line-height: 30px;
         background:transparent;
@@ -335,8 +335,7 @@ textarea.form-control {
     .dropdown-menu-dark{
         background:$white !important;
         width:100%;
-        border-radius:6px;
-        padding:0px;
+        border-radius:6px;padding:0px;
     }
     .dropdown-item{
         font-size: 24px;line-height: 30px;color:$fuldark-gray;padding: 0px;
@@ -352,26 +351,24 @@ textarea.form-control {
     .delete-icon{
         padding:10px 35px;
         align-items: center;
-        img{width:24px; height:24px;cursor: pointer;}
+        img{width:24px; height:24px; cursor: pointer;}
     }
 }
 .drop-down-bg{
     background: rgba(0, 0, 0, 0.26);
     height: 100%;
-    width: 100%;
-    z-index: 99;
+    width: 100%; z-index: 99;
     position:absolute;
     top: 0px;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .cs_select {
         .form-select {padding:0px 12px;}        
     }
     .input-bas-comp{
-        label{font-size: 18px; line-height: 22px;}
-        .form-control{font-size: 18px; line-height:22px;}
+        label{font-size:18px; line-height:22px;}
+        .form-control{font-size:18px; line-height:22px;}
      }
     .input-group-comp{
         .form-control{font-size:18px; line-height:22px;}
