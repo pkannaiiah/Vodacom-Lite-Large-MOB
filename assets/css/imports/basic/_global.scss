@@ -770,6 +770,15 @@ text-overflow: ellipsis;
         border-radius:4px;
     }
 }
+
+// background blur dropdown start
+.blur {
+    /* Add the blur effect */
+    filter: blur(2.5px);
+    -webkit-filter: blur(2.5px);
+  }
+// background blur dropdown end
+
 @media (max-width: 1024px) {
 .mt-minhed {margin-top: 60px;}
 .navbar-toggler{display: none;}
