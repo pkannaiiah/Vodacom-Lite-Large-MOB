@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.535" height="36.446" viewBox="0 0 34.535 36.446">
+  <g id="Group_3" data-name="Group 3" transform="translate(0.752 0.446)">
+    <g id="Rectangle" transform="translate(3 20)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="1.2">
+      <rect width="30" height="16" stroke="none"/>
+      <rect x="0.6" y="0.6" width="28.8" height="14.8" fill="none"/>
+    </g>
+    <g id="Rectangle-2" data-name="Rectangle" transform="translate(16 20)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="1.2">
+      <rect width="6" height="16" stroke="none"/>
+      <rect x="0.6" y="0.6" width="4.8" height="14.8" fill="none"/>
+    </g>
+    <path id="Path_5" data-name="Path 5" d="M0,8.946,31.084,0,33,5.346,1.542,14Z" transform="translate(0 6)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="Path_6" data-name="Path 6" d="M1.5,5.5,0,0" transform="translate(12.844 11.056) rotate(-3)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="Path_7" data-name="Path 7" d="M0,0,1.5,4.5" transform="translate(19 10)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="Path_8" data-name="Path 8" d="M10,6.6S4.246-3.861.752,2.26,10,6.6,10,6.6Z" transform="translate(4 3)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="Path_8-2" data-name="Path 8" d="M-6.835,10S-7.9-2.98-2.07.888-6.835,10-6.835,10Z" transform="translate(23)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="1.2"/>
+  </g>
+</svg>
