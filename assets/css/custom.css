@@ -762,7 +762,7 @@ textarea.form-control {
 
 .input-group-comp span {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 45px;
   background: transparent;
   border-top: 0px;
   border-right: 0px;
@@ -770,6 +770,7 @@ textarea.form-control {
   border-bottom: 1px solid #CCCCCC;
   border-radius: 0px !important;
   padding: 0px 20px 0px 0px;
+  position: absolute;
 }
 .input-group-comp .form-control {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
@@ -781,6 +782,7 @@ textarea.form-control {
   border-left: 0px;
   border-bottom: 1px solid #CCCCCC;
   border-radius: 0px !important;
+  padding-left: 50px;
 }
 .input-group-comp .form-control:focus {
   border-bottom: 1px solid #E60000;
@@ -880,10 +882,11 @@ textarea.form-control {
   .input-group-comp .form-control {
     font-size: 18px;
     line-height: 22px;
+    padding-left: 50px;
   }
   .input-group-comp span {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 45px;
   }
   .dropdown-comp {
     width: 100%;
@@ -1697,6 +1700,17 @@ hr {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1) !important;
 }
 
+.refresh-comp {
+  display: flex;
+}
+.refresh-comp .lang {
+  width: 100%;
+}
+.refresh-comp img {
+  width: 30px;
+  height: 30px;
+}
+
 @media (max-width: 1024px) {
   .mt-minhed {
     margin-top: 60px;
@@ -2330,7 +2344,7 @@ hr {
   letter-spacing: 1.5px;
 }
 .success-comp .success-lar-text {
-  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 1.2px;
@@ -2428,7 +2442,7 @@ hr {
     color: #FFFFFF;
   }
   .summary-card-details {
-    padding: 20px;
+    padding: 35px 25px;
   }
   .summary-card-details .summary-bld-txt {
     font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
@@ -2459,16 +2473,17 @@ hr {
     letter-spacing: 0.5px;
   }
   .success-comp .success-xsma-txt {
-    border: 0px solid red;
+    font-size: 18px;
   }
   .success-comp .success-xlar-text {
-    border: 0px solid red;
+    font-size: 22px;
+    line-height: 26px;
   }
   .success-comp .success-lar-text {
-    border: 0px solid red;
+    font-size: 20px;
   }
   .success-comp .success-smal-text {
-    border: 0px solid red;
+    font-size: 16px;
   }
   .vfmcard-bg-comp {
     width: 100%;
@@ -3017,7 +3032,7 @@ hr {
   line-height: 30px;
 }
 .vfm-bg-comp1 .summary-card-details {
-  padding: 40px;
+  padding: 50px 26px 35px 20px;
 }
 
 .p-note {

@@ -296,7 +296,7 @@
         }
         .success-lar-text
         {
-            font-family: $vodafonrg-regular;
+            font-family: $vodafonlt-light;
             font-size: 24px;
             line-height: 30px;
             letter-spacing: 1.2px;
@@ -389,7 +389,7 @@
 
     .summary-card-mobi {
         height: 200px;
-        // background: linear-gradient(180deg, $primary 27.54%, $dark-red 88.84%);
+        // background: linear-gradient(180deg, $primary 27.54%, $dark-$primary 88.84%);
         background: $primary;
         border-radius: 0px 0px 14px 14px;
         display: flex;
@@ -416,7 +416,7 @@
     }
 
     .summary-card-details {
-        padding: 20px;
+        padding: 35px 25px;
 
         .summary-bld-txt {
             font-family: $vodafonrg-bold;
@@ -458,19 +458,18 @@
         }
         .success-xsma-txt
         {
-            border: 0px solid red;
+            font-size:18px;
         }
-        .success-xlar-text
-        {
-            border: 0px solid red;
+        .success-xlar-text{
+            font-size: 22px;
+            line-height: 26px;
         }
-        .success-lar-text
-        {
-            border: 0px solid red;
+        .success-lar-text{
+            font-size: 20px;
         }
         .success-smal-text
         {
-            border: 0px solid red;
+            font-size:16px;
         }
     }
     

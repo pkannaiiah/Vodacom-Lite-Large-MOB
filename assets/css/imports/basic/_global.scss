@@ -780,6 +780,11 @@ text-overflow: ellipsis;
   }
 // background blur dropdown end
 .box-shadow-none{box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1) !important;}
+.refresh-comp{
+    display: flex;
+    .lang{width:100%;}
+    img{width:30px;height:30px;}
+}
 
 @media (max-width: 1024px) {
 .mt-minhed {margin-top: 60px;}
