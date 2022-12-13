@@ -57,8 +57,7 @@
             <p>Please insert your mobile number below. Your number will be used to identify you for this app.</p>
             <div class="input-bas-comp input-group input-group-comp mb-1 mt-4">
                 <span class="input-group-text pl-0" id="basic-addon1">+226</span>
-                <input type="number" class="form-control" placeholder="eg. 12 345 678" aria-label="Username"
-                    aria-describedby="basic-addon1">
+                <input type="number" class="form-control" placeholder="eg. 12 345 678" pattern="[1-9]" value="1" required onKeyPress="if(this.value.length==10) return false;">
             </div>
             <div class="p-note mt-20">This number must be able to receive SMSs.</div>
             <div class="mt-3 pt-3">

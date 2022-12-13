@@ -104,8 +104,7 @@
             <p> Enter the Vodacom number that you are recharging. </p>
             <div class="input-bas-comp input-group input-group-comp mb-1 mt-4">
                 <span class="input-group-text pl-0" id="basic-addon1">+226</span>
-                <input type="number" class="form-control" placeholder="Mobile Number" aria-label="Username"
-                    aria-describedby="basic-addon1">
+                <input type="number" class="form-control" placeholder="Mobile Number" pattern="[1-9]" value="1" required onKeyPress="if(this.value.length==10) return false;">
             </div>
             <div class="sup-text mt-22">
                 <p>Would you like to save this number to your recents list?.</p>

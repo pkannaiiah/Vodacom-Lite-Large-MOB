@@ -1,0 +1,43 @@
+.offcanvas-menu{
+    border-radius:12px 12px 0px 0px;
+    .offcanvas-body{padding:0px;}
+    .offcanvas-menu-hed{
+        font-size:20px;
+        font-family:$vodafonrg-bold;
+        line-height:18px;
+        background:#EBEBEB;
+        border-radius:12px 12px 0px 0px;
+        padding:11px 21px 12px 21px;
+    }
+    .offcanvas-list{
+            a{
+                font-family:$vodafonrg-regular;
+                font-size:20px;
+                line-height: 18px;
+                margin-bottom:24px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                img{width:26px; margin-right:19px;}
+            }
+    }
+}
+.btn-close{
+    background: url(../images/top-arrow.svg) no-repeat ;
+    width:100%;
+    text-align: center;
+}
+.btnclose-popup{width:40px; margin:0 auto; text-align: center;}
+
+@media (max-width: 640px) {
+    .mt-70{margin-top:0px;}
+    .offcanvas-menu{
+        border-radius:0px;
+        .offcanvas-menu-hed{
+            font-size:20px;
+            font-family:$vodafonrg-bold;
+            line-height:18px;
+            border-radius:0px;
+        }
+    }
+}
