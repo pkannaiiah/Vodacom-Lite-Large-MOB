@@ -5,13 +5,13 @@
 }
 
 body {
-    @extend %white-bg;
     font-size: 16px;
     line-height: 0.5 !important;
     font-family: $vodafonrg-regular;
     position: relative;
     @extend %secondary-color;
     line-height: 22px;
+    background: #EBEBEB;
 }
 
 a {
@@ -147,6 +147,7 @@ select:focus,
 .pse_lg {
     padding: 0px 25px;
 }
+.plr{padding:0px 20px !important;}
 
 .pse_md {
     padding: 0px 25px;
@@ -928,6 +929,7 @@ hr {
 .border-radious0 {
     border-radius: 0px !important;
 }
+.h00vh{height:auto;margin-bottom: 75px;}
 
 @media (max-width: 1024px) {
     .mt-minhed {

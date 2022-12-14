@@ -58,7 +58,7 @@ a:hover, a, body, .secondary_color {
   background: #E60000;
 }
 
-.right_side_modal .modal_fixed_footer .fixed_footer_container, .right_side_modal .modal-dialog .modal-content, .full_modal .modal-dialog .modal-content, .bottom_modal .modal-dialog .modal-content, .custom_modal .modal-dialog .modal-content, .footer_menu .fixed_footer_container, .fixed_footer .fixed_footer_container, body, .custom_checkbox + label::before, .custom_radio + label::before, .form-control:focus, .form-control, .white_bg {
+.right_side_modal .modal_fixed_footer .fixed_footer_container, .right_side_modal .modal-dialog .modal-content, .full_modal .modal-dialog .modal-content, .bottom_modal .modal-dialog .modal-content, .custom_modal .modal-dialog .modal-content, .footer_menu .fixed_footer_container, .fixed_footer .fixed_footer_container, .custom_checkbox + label::before, .custom_radio + label::before, .form-control:focus, .form-control, .white_bg {
   background: #FFFFFF;
 }
 
@@ -915,6 +915,7 @@ body {
   font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   position: relative;
   line-height: 22px;
+  background: #EBEBEB;
 }
 
 a {
@@ -1017,6 +1018,10 @@ select:focus,
 
 .pse_lg {
   padding: 0px 25px;
+}
+
+.plr {
+  padding: 0px 20px !important;
 }
 
 .pse_md {
@@ -1731,6 +1736,11 @@ hr {
   border-radius: 0px !important;
 }
 
+.h00vh {
+  height: auto;
+  margin-bottom: 75px;
+}
+
 @media (max-width: 1024px) {
   .mt-minhed {
     margin-top: 60px;
@@ -2087,6 +2097,14 @@ hr {
 @media (max-width: 767.98px) {
   .footer_menu {
     display: block;
+  }
+  .fixed_footer_new {
+    position: fixed !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    width: 100% !important;
+    padding: 50px 20px;
   }
 }
 @media (min-width: 768px) {
