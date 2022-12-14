@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <title>Vodacom-Lite</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!--global css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css" />
+    <!--Custom css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+</head>
+
+<body>
+
+  <div class="body_container">
+
+    <header class="header web-top-header mt0-0p">
+        <div class="header_container flex_grp_center">
+        <!--mobile header-->
+        <div class="mobile-header-comp2">
+            <div class="moble-header">
+                <div class="onboard-header">
+                    <img src="assets/images/vodacom-logo.svg" alt="" title="" />
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section class="app_main_wrapper mt-minhed mt-res-45 mt0-0p"> 
+
+        <div class="vse_sm mt0-0p">
+            <div class="mb-4 language-comp lang-res-mt">
+                <select id="Textfield" onkeyup="myFunction()" >
+                    <option>EN</option>
+                    <option>TN</option>
+                </select>
+            </div>            
+
+        <div class="mt-3 mb-3 text-center onb-vfl-weblogo">
+            <img src="assets/images/vodacom-logo.svg" alt="vodacom logo" title="vodacom logo">
+        </div>
+        <div class="mb-4 primary_color text-center mt-res-80">
+            <h2>Welcome</h2>
+        </div>
+
+        <div class="vfm-bg-comp text-center">
+            <div class="login_contnent">
+                <p>Please insert your mobile number below. Your number will be used to identify you for this app.</p>
+            <div class="input-bas-comp input-group input-group-comp mb-1 mt-4">
+                <span class="input-group-text pl-0" id="basic-addon1">+226</span>
+                <input type="number" class="form-control" placeholder="eg. 12 345 678" pattern="[1-9]" required onKeyPress="if(this.value.length==10) return false;">
+            </div>
+            <div class="error-message primary_color mb-36">
+                We were unable to send your OTP. Please try again.
+            </div>
+            <div class="p-note">This number must be able to receive SMSs.</div>
+            </div>
+            <div>
+                <button class="custom_btn custom_btn_primary btn_block mt-20">Submit</button>
+            </div>
+
+        </div>
+
+
+        </div>
+    </section>
+
+</div><!--body_container-->
+
+    <!--js-->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
