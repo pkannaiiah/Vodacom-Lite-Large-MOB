@@ -740,10 +740,14 @@ text-overflow: ellipsis;
 .error-message{
     font-family: $vodafonlt-light;
     font-size: 16px; 
-    letter-spacing: 0.5;
+    letter-spacing: 0.5px;
     line-height: 22px;
     margin-top: 5px;
     text-align: left;
+}
+.mb-36
+{
+    margin-bottom: 36px;
 }
 .sup-text{
     p{

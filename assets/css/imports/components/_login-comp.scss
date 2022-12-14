@@ -4,13 +4,18 @@
     border-radius: 6px;
     padding:60px 20px;
     margin: 0 auto;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
 
     p {
         font-size: 24px;
         line-height: 30px;
         font-family: $vodafonlt-light;
-        letter-spacing: 1.52px;
+        letter-spacing: 1.2px;
     }
+}
+.login_contnent
+{
+    margin: 30px 0px 90px 0px;
 }
 .vfm-bg-comp1 {
     width: 439px;
@@ -29,7 +34,7 @@
 
 .p-note {
     font-size: 18px;
-    color: $fuldark-gray;
+    color: $placeholder;
     text-align: left;
     margin-top: 20px;
     font-weight: 400;
@@ -61,7 +66,7 @@
             font-size: 20px;
             line-height: 22px;
         }
-    }
+    } 
     .p-note{
         font-size: 16px;
         line-height: 18px;
