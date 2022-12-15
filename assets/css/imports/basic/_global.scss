@@ -75,9 +75,7 @@ select:focus,
     @extend %flex_grp_end;
 }
 
-.background-none {
-    background: none !important;
-}
+.background-none {background: none !important;}
 
 .vse_sm {
     padding: 24px 33px;
@@ -143,7 +141,6 @@ select:focus,
 .mt-minhed {
     margin-top: 60px;
 }
-
 
 .mt-160 {
     margin-top: 160px;
