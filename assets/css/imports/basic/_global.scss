@@ -966,6 +966,18 @@ hr {
         line-height: 0.5 !important;
         line-height: 16px;
     }
+    .input-group
+    {
+        width: 50%;
+        display: inline-flex;
+    }
+    .error-message
+    {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
 
     .vse_lg {
         padding: 0px 25px;
