@@ -79,11 +79,6 @@ select:focus,
 
 .vse_sm {
     padding: 24px 33px;
-    // background: url(../images/bg-web-res.png);
-    background: url(../images/check_group.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-top: 70px;
     height: 100%;
 }
@@ -184,6 +179,8 @@ select:focus,
     margin: 0px auto;
     min-height: 100vh;
     position: relative;
+    background: url(../images/bg-web-res.png);
+    background-repeat: no-repeat;
 }
 
 .app_main_wrapper {
@@ -960,6 +957,7 @@ hr {
     .side_menu_wrapper {
         width: 700px !important;
     }
+    
 }
 
 @media (max-width: 767.98px) {
@@ -1021,5 +1019,9 @@ hr {
 
     .mt-res-45 {
         margin-top: 45px !important;
+    }
+    .body_container
+    {
+        background: $light-gray !important;
     }
 }
