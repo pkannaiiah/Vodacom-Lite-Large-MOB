@@ -954,13 +954,6 @@ select:focus,
 
 .vse_sm {
   padding: 24px 33px;
-<<<<<<< HEAD
-  background: url(../images/bg-web-res.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-=======
->>>>>>> abf3fa42c42d15d9d00f7afec115a22e36fae9e3
   margin-top: 70px;
   height: 100%;
 }
@@ -1750,6 +1743,10 @@ hr {
   margin-bottom: 75px;
 }
 
+.background_grey {
+  background: transparent;
+}
+
 @media (max-width: 1024px) {
   .mt-minhed {
     margin-top: 60px;
@@ -1778,6 +1775,9 @@ hr {
     font-size: 14px;
     line-height: 0.5 !important;
     line-height: 16px;
+  }
+  .background_grey {
+    background-color: #EBEBEB !important;
   }
   .input-group {
     width: 50%;
