@@ -66,7 +66,7 @@
 
                   <div>
                   <span class="navbar-text numb-text me-2"> 058 345 678 </span>
-                  <span class="navbar-text moremenu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span class="navbar-text moremenu" id="open-menu">
                     <img src="assets/images/burger-menu.svg" alt="" title=""/>
                   </span>
                 </div>
@@ -154,66 +154,101 @@
         </div><!--vse_sm-->
           
     </section>
+
+
+
+    <div id="body-overlay"></div>
+    <nav class="real-menu offcanvas-menu mt-70" role="navigation">
+        <div class="offcanvas-body">
+            <div class="offcanvas-menu-hed">
+              My Account
+            </div>
+        
+            <div class="offcanvas-list mty-27">
+                <a><img src="assets/images/recharge-icon.svg" alt="" title="" /> Recharge with PIN </a>
+                <a><img src="assets/images/balances-icon.svg" alt="" title="" /> Balances </a>
+            </div>
+        
+            <div class="offcanvas-menu-hed border-radious0">
+              Help and Support
+            </div>
+            <div class="offcanvas-list mty-27">
+                <a><img src="assets/images/More-Menu-FAQs-icon.svg" alt="" title="" /> FAQs </a>
+                <a><img src="assets/images/More-Menu-Contact-Us-icon.svg" alt="" title="" /> Contact us </a>
+            </div>
+        
+            <div class="offcanvas-menu-hed border-radious0">
+            </div>
+            <div class="offcanvas-list mty-27">
+                <a><img src="assets/images/Menu-Logout-Icon.svg" alt="" title="" /> Log Out </a>
+            </div>
+        
+            <div class="offcanvas-list pt-45 text-center btnclose-popup">
+                <a class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+            </div>
+            <div class="version-com">v 0.11.5</div>
+            
+          </div>
+          
+    </nav>
+
+
+
 </div><!--body_container-->
 
 <!--menu sec-->
 
-<div class="offcanvas offcanvas-end offcanvas-menu mt-70" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <!--div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div-->
-  <div class="offcanvas-body">
-    <div class="offcanvas-menu-hed">
-      My Account
-    </div>
-
-    <div class="offcanvas-list mty-27">
-        <a><img src="assets/images/recharge-icon.svg" alt="" title="" /> Recharge with PIN </a>
-        <a><img src="assets/images/balances-icon.svg" alt="" title="" /> Balances </a>
-    </div>
-
-    <div class="offcanvas-menu-hed border-radious0">
-      Help and Support
-    </div>
-    <div class="offcanvas-list mty-27">
-        <a><img src="assets/images/More-Menu-FAQs-icon.svg" alt="" title="" /> FAQs </a>
-        <a><img src="assets/images/More-Menu-Contact-Us-icon.svg" alt="" title="" /> Contact us </a>
-    </div>
-
-    <div class="offcanvas-menu-hed border-radious0">
-    </div>
-    <div class="offcanvas-list mty-27">
-        <a><img src="assets/images/Menu-Logout-Icon.svg" alt="" title="" /> Log Out </a>
-    </div>
-
-    <div class="offcanvas-list pt-45 text-center btnclose-popup">
-        <a class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>
-    </div>
-    
-  </div>
-</div>
 
 <!--menu end-->
 
 
+<!--js-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/custom.js"></script>
 
-    <!--js-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-
+    
     <script>
-      //debugger;
-      $(document).ready(function(){
-        $(".dropdownmenu001").on('click',function(){
-            $("body").addClass('modal-popup');
-        });
-        $(".listaction").on('click',function(){
-            $("body").removeClass('modal');
-        });
-    });
+        function hasClass(ele, cls) {
+    return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
+
+function addClass(ele, cls) {
+    if (!hasClass(ele, cls)) ele.className += " " + cls;
+}
+
+function removeClass(ele, cls) {
+    if (hasClass(ele, cls)) {
+        var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+        ele.className = ele.className.replace(reg, ' ');
+    }
+}
+
+//Add event from js the keep the marup clean
+function init() {
+    document.getElementById("open-menu").addEventListener("click", toggleMenu);
+    document.getElementById("body-overlay").addEventListener("click", toggleMenu);
+}
+
+//The actual fuction
+function toggleMenu() {
+    var ele = document.getElementsByTagName('body')[0];
+    if (!hasClass(ele, "menu-open")) {
+        addClass(ele, "menu-open");
+    } else {
+        removeClass(ele, "menu-open");
+    }
+}
+
+//Prevent the function to run before the document is loaded
+document.addEventListener('readystatechange', function() {
+    if (document.readyState === "complete") {
+        init();
+    }
+});
+        
     </script>
+
     
 
 </body>

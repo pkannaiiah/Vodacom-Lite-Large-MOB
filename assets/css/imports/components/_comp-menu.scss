@@ -21,6 +21,8 @@
                 img{width:26px; margin-right:19px;}
             }
     }
+    .offcanvas.offcanvas-end{right:250px;}
+
 }
 .btn-close{
     background: url(../images/top-arrow.svg) no-repeat ;
@@ -29,6 +31,59 @@
 }
 .btnclose-popup{width:40px; margin:0 auto; text-align: center;}
 
+/*new menu st*/
+#body-overlay {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 995;
+    top: 0;
+    left: 0px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+  }  
+  .real-menu {
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    z-index: 996;
+    width: 300px;
+    height: 100%;
+    padding: 0px;
+    box-shadow: 0 6px 12px rgba(107, 82, 82, 0.3);
+    background-color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: ease 0.2s all;
+    border-radius:12px 12px 0px 0px;
+  }
+  
+  body.menu-open #body-overlay {display: block;}
+  body.menu-open .real-menu {right: 247px;}
+
+.menu-heding{
+font-size: 20px;
+line-height: 18px;
+background: #EBEBEB;
+border-radius: 12px 12px 0px 0px;
+padding: 11px 21px 12px 21px;
+}
+/*new menu end*/
+.version-com{
+    font-size:14px;
+    text-align: right;
+    margin-right:25px;
+     color:#999999;
+     position: absolute;
+     right: 0px;
+     bottom:20px;
+}
+
+@media (max-width:1024px) {
+    body.menu-open .real-menu {right: 15px;}
+}
 @media (max-width: 640px) {
     .mt-70{margin-top:0px;}
     .offcanvas-menu{
@@ -40,4 +95,5 @@
             border-radius:0px;
         }
     }
+    body.menu-open .real-menu {right: 0px;}
 }
