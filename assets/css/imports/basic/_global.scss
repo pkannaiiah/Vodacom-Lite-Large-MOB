@@ -79,10 +79,13 @@ select:focus,
 
 .vse_sm {
     padding: 24px 33px;
+<<<<<<< HEAD
     background: url(../images/bg-web-res.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+=======
+>>>>>>> abf3fa42c42d15d9d00f7afec115a22e36fae9e3
     margin-top: 70px;
     height: 100%;
 }
@@ -183,6 +186,8 @@ select:focus,
     margin: 0px auto;
     min-height: 100vh;
     position: relative;
+    background: url(../images/bg-web-res.png);
+    background-repeat: no-repeat;
 }
 
 .app_main_wrapper {
@@ -959,6 +964,7 @@ hr {
     .side_menu_wrapper {
         width: 700px !important;
     }
+    
 }
 
 @media (max-width: 767.98px) {
@@ -966,6 +972,22 @@ hr {
         font-size: 14px;
         line-height: 0.5 !important;
         line-height: 16px;
+    }
+    .input-group
+    {
+        width: 50%;
+        display: inline-flex;
+    }
+    .input-group-otp
+    {
+        width: 20%;
+    }
+    .error-message
+    {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.5px;
     }
 
     .vse_lg {
@@ -1020,5 +1042,9 @@ hr {
 
     .mt-res-45 {
         margin-top: 45px !important;
+    }
+    .body_container
+    {
+        background: $light-gray !important;
     }
 }
