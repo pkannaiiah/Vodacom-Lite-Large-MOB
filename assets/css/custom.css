@@ -3299,9 +3299,11 @@ body.menu-open .real-menu {
   justify-content: space-between;
 }
 .mfooter-main ul li {
-  padding: 8px 10px;
+  padding: 7px;
   display: flex;
   flex-direction: column;
+  border: 0px solid red;
+  height: 70px;
 }
 .mfooter-main .icon {
   border: 0px solid red;
@@ -3337,6 +3339,8 @@ body.menu-open .real-menu {
   position: relative;
   background: linear-gradient(180deg, #FFF, #FFF);
   text-align: center;
+  top: -38px;
+  left: -1px;
   border: 2px solid #CCCCCC;
 }
 .buy_button_main .buy_button .buy_button_2 {

@@ -14,9 +14,11 @@
         justify-content: space-between;
 
         li {
-            padding: 8px 10px;
+            padding: 7px;
             display: flex;
             flex-direction: column;
+            border: 0px solid red;
+            height: 70px;
         }
     }
 
@@ -92,7 +94,8 @@
             position: relative;
             background: linear-gradient(180deg, #FFF, #FFF);
             text-align: center;
-            // left: 13px;
+            top: -38px;
+            left: -1px;
             border: 2px solid #CCCCCC;
         }
 
