@@ -3124,6 +3124,21 @@ hr {
   padding: 50px 26px 35px 20px;
 }
 
+.vfm-bg-comp2 {
+  width: 439px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 60px 20px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+}
+.vfm-bg-comp2 p {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
+  letter-spacing: 1.2px;
+}
+
 .p-note {
   font-size: 18px;
   color: #999999;
@@ -3170,6 +3185,9 @@ hr {
   .vfm-bg-comp1 p {
     font-size: 20px;
     line-height: 22px;
+  }
+  .vfm-bg-comp2 {
+    width: 335px;
   }
   .p-note {
     font-size: 16px;
