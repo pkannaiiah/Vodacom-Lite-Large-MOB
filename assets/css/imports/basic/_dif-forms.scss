@@ -31,6 +31,7 @@
     }
 }
 
+
 //Placeholder
 ::placeholder {
     color: $placeholder;
@@ -247,7 +248,7 @@ textarea.form-control {
             background-color:$light-black;
             color: $fuldark-gray;
         }
-        .option-cont{display: flex; justify-content: space-between;}
+        .option-cont{display: flex; justifyform-control-content: space-between;}
     }
 }
 
@@ -307,6 +308,22 @@ textarea.form-control {
         padding-left: 50px;
     }
     .form-control:focus{
+        border-bottom: 1px solid $primary;
+    }
+    .form-control-voucher{
+        font-family: $vodafonrg-regular;
+        font-size:20px;
+        line-height: 30px;
+        background:transparent;
+        border-top:0px;
+        border-right:0px;
+        border-left:0px;
+        border-bottom: 1px solid $border;
+        border-radius: 0px !important;
+        width: 15%;
+        text-align: center;
+    }
+    .form-control-voucher:focus{
         border-bottom: 1px solid $primary;
     }
  }
@@ -379,6 +396,7 @@ textarea.form-control {
      }
     .input-group-comp{
         .form-control{font-size:18px;line-height:22px;padding-left:50px;}
+        .form-control-voucher{font-size:18px;line-height:22px;width: 15%;}
         span{font-size:18px; line-height:45px;}
      }
      .dropdown-comp{

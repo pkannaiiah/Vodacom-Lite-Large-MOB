@@ -724,7 +724,7 @@ textarea.form-control {
 }
 .cs_select .form-select .option-cont {
   display: flex;
-  justify-content: space-between;
+  justifyform-control-content: space-between;
 }
 
 .custom_checkbox + label::before {
@@ -785,6 +785,22 @@ textarea.form-control {
   padding-left: 50px;
 }
 .input-group-comp .form-control:focus {
+  border-bottom: 1px solid #E60000;
+}
+.input-group-comp .form-control-voucher {
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  background: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid #CCCCCC;
+  border-radius: 0px !important;
+  width: 15%;
+  text-align: center;
+}
+.input-group-comp .form-control-voucher:focus {
   border-bottom: 1px solid #E60000;
 }
 
@@ -883,6 +899,11 @@ textarea.form-control {
     font-size: 18px;
     line-height: 22px;
     padding-left: 50px;
+  }
+  .input-group-comp .form-control-voucher {
+    font-size: 18px;
+    line-height: 22px;
+    width: 15%;
   }
   .input-group-comp span {
     font-size: 18px;
@@ -3289,7 +3310,7 @@ body.menu-open .real-menu {
 }
 .mfooter-main {
   text-align: center;
-  max-width: 376px;
+  width: 376px;
   padding: 0px 13px;
   background-image: url(../../assets/images/footer_shape_mobi.svg);
   background-repeat: no-repeat;
@@ -3371,4 +3392,55 @@ body.menu-open .real-menu {
   border: 10px solid gray;
   border-top: 0;
   box-sizing: border-box;
+}
+
+@media (max-width: 350px) {
+  .mfooter-main {
+    text-align: center;
+    width: 320px;
+    padding: 0px 1px;
+    background-image: url(../../assets/images/footer_shape_mobi_320.svg);
+    background-repeat: no-repeat;
+  }
+  .mfooter-main ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mfooter-main ul li {
+    padding: 7px 4px;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid red;
+    height: 70px;
+  }
+  .mfooter-main .icon {
+    border: 0px solid red;
+  }
+  .mfooter-main span img {
+    height: 25px;
+    width: 25px;
+  }
+  .mfooter-main .text {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 18px;
+    word-spacing: 0.5px;
+  }
+  .mfooter-main .buy_round {
+    top: 0;
+    left: 0;
+  }
+  .buy_button_main {
+    border: 0px solid #ccc;
+  }
+  .buy_button_main .buy_button {
+    border: 0px solid black;
+  }
+  .buy_button_main .buy_button .buy_button_1 {
+    border-radius: 40px;
+    left: 1px;
+  }
+  .buy_button_main .buy_button .buy_button_2 .buy_text {
+    border: 0px solid red;
+  }
 }/*# sourceMappingURL=custom.css.map */
