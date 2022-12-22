@@ -3189,6 +3189,9 @@ hr {
   .vfm-bg-comp2 {
     width: 335px;
   }
+  .vfm-bg-comp2 p {
+    display: none;
+  }
   .p-note {
     font-size: 16px;
     line-height: 18px;
