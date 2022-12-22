@@ -933,7 +933,15 @@ hr {
 {
     background: transparent;
 }
-
+.respo_title
+{
+    display: none;
+}
+.large_center
+{
+    width: 439px;
+    margin: 0 auto;
+}
 @media (max-width: 1024px) {
     .mt-minhed {
         margin-top: 60px;
@@ -945,6 +953,7 @@ hr {
 }
 
 @media (min-width: 767.98px) {
+   
     .header .header_left {
         left: 16px !important;
     }
@@ -1046,5 +1055,13 @@ hr {
     .body_container
     {
         background: $light-gray !important;
+    }
+    .respo_title
+    {
+        display: block;
+    }
+    .large_center
+    {
+        width: auto;
     }
 }

@@ -1768,6 +1768,15 @@ hr {
   background: transparent;
 }
 
+.respo_title {
+  display: none;
+}
+
+.large_center {
+  width: 439px;
+  margin: 0 auto;
+}
+
 @media (max-width: 1024px) {
   .mt-minhed {
     margin-top: 60px;
@@ -1855,6 +1864,12 @@ hr {
   }
   .body_container {
     background: #EBEBEB !important;
+  }
+  .respo_title {
+    display: block;
+  }
+  .large_center {
+    width: auto;
   }
 }
 /* Components */
@@ -3128,15 +3143,23 @@ hr {
   width: 439px;
   background: #fff;
   border-radius: 6px;
-  padding: 60px 20px;
+  padding: 60px 30px;
   margin: 0 auto;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+  margin-top: 40px;
 }
 .vfm-bg-comp2 p {
   font-size: 24px;
   line-height: 30px;
   font-family: "VodafoneLt-Regular", Arial, Helvetica, sans-serif;
   letter-spacing: 1.2px;
+}
+.vfm-bg-comp2 .vfm-bg-cont {
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+.vfm-bg-comp2 .vfm-bg-btn {
+  margin-top: 50px;
 }
 
 .p-note {
@@ -3188,9 +3211,18 @@ hr {
   }
   .vfm-bg-comp2 {
     width: 335px;
+    padding: 20px 14px;
+    margin-top: 15px;
   }
   .vfm-bg-comp2 p {
     display: none;
+  }
+  .vfm-bg-comp2 .vfm-bg-cont {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .vfm-bg-comp2 .vfm-bg-btn {
+    margin-top: 22px;
   }
   .p-note {
     font-size: 16px;
