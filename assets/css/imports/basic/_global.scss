@@ -960,7 +960,7 @@ hr {
 
     .summary_head {
         background: $primary;
-        font: $vodafonrg-regular;
+        font-family: $vodafonrg-regular;
         color: white;
         font-size: 28px;
         line-height: 30px;
@@ -1157,23 +1157,35 @@ hr {
             color: black;
             padding: 20px 15px;
             border-radius: 6px;
+            font-size: 16px;
 
             .sh_lab_heading {
-                border: 1px solid red;
+                border: 0px solid red;
             }
 
             .sh_lab_title {
-                border: 1px solid black;
+                margin-top: 2px;
+                font-family: $vodafonrg-bold !important;
+                
+                line-height: 18px;
             }
         }
 
         .summary_cont {
+            font-size: 20px;
+            line-height: 22px;
             .sc_lab_head {
-                border: 1px solid green;
+                border: 0px solid green;
+                margin-top: 20px;
             }
 
             .sc_lab_title {
                 border: 1px solid blue;
+            }
+            .sc_lab_support
+            {
+                font-size: 14px;
+                line-height: 16px;
             }
         }
     }

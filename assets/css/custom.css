@@ -1785,7 +1785,7 @@ hr {
 }
 .summary_main .summary_head {
   background: #E60000;
-  font: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  font-family: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 28px;
   line-height: 30px;
@@ -1938,18 +1938,30 @@ hr {
     color: black;
     padding: 20px 15px;
     border-radius: 6px;
+    font-size: 16px;
   }
   .summary_main .summary_head .sh_lab_heading {
-    border: 1px solid red;
+    border: 0px solid red;
   }
   .summary_main .summary_head .sh_lab_title {
-    border: 1px solid black;
+    margin-top: 2px;
+    font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif !important;
+    line-height: 18px;
+  }
+  .summary_main .summary_cont {
+    font-size: 20px;
+    line-height: 22px;
   }
   .summary_main .summary_cont .sc_lab_head {
-    border: 1px solid green;
+    border: 0px solid green;
+    margin-top: 20px;
   }
   .summary_main .summary_cont .sc_lab_title {
     border: 1px solid blue;
+  }
+  .summary_main .summary_cont .sc_lab_support {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 /* Components */
