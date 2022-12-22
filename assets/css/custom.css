@@ -1777,6 +1777,34 @@ hr {
   margin: 0 auto;
 }
 
+.summary_main {
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 439px;
+  text-align: center;
+}
+.summary_main .summary_head {
+  background: #E60000;
+  font: "VodafoneRg-Regular", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 28px;
+  line-height: 30px;
+  padding: 90px 20px;
+}
+.summary_main .summary_head .sh_lab_heading {
+  border: 0px solid red;
+}
+.summary_main .summary_head .sh_lab_title {
+  border: 0px solid black;
+  margin-top: 20px;
+}
+.summary_main .summary_cont .sc_lab_head {
+  border: 1px solid green;
+}
+.summary_main .summary_cont .sc_lab_title {
+  border: 1px solid blue;
+}
+
 @media (max-width: 1024px) {
   .mt-minhed {
     margin-top: 60px;
@@ -1870,6 +1898,58 @@ hr {
   }
   .large_center {
     width: auto;
+  }
+  .summary_main {
+    margin: 0 auto;
+    padding-top: 38px;
+    width: auto;
+    text-align: center;
+  }
+  .summary_main .summary_head {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 65px 30px;
+    border-radius: 14px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .summary_main .summary_head .sh_lab_heading {
+    border: 0px solid red;
+  }
+  .summary_main .summary_head .sh_lab_title {
+    border: 0px solid black;
+  }
+  .summary_main .summary_cont .sc_lab_head {
+    border: 1px solid green;
+  }
+  .summary_main .summary_cont .sc_lab_title {
+    border: 1px solid blue;
+  }
+}
+@media (max-width: 320px) {
+  .summary_main {
+    padding-top: 60px;
+    width: auto;
+    text-align: center;
+    margin: 0px 20px;
+  }
+  .summary_main .summary_head {
+    background: #FFF;
+    color: black;
+    padding: 20px 15px;
+    border-radius: 6px;
+  }
+  .summary_main .summary_head .sh_lab_heading {
+    border: 1px solid red;
+  }
+  .summary_main .summary_head .sh_lab_title {
+    border: 1px solid black;
+  }
+  .summary_main .summary_cont .sc_lab_head {
+    border: 1px solid green;
+  }
+  .summary_main .summary_cont .sc_lab_title {
+    border: 1px solid blue;
   }
 }
 /* Components */

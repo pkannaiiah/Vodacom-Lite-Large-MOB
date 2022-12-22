@@ -75,16 +75,18 @@ select:focus,
     @extend %flex_grp_end;
 }
 
-.background-none {background: none !important;}
+.background-none {
+    background: none !important;
+}
 
 .vse_sm {
     padding: 24px 33px;
     margin-top: 70px;
     height: 100%;
 }
-.vh100
-{
-    height:100vh !important;
+
+.vh100 {
+    height: 100vh !important;
 }
 
 .text-ellipsis {
@@ -144,7 +146,10 @@ select:focus,
 .pse_lg {
     padding: 0px 25px;
 }
-.plr{padding:0px 20px !important;}
+
+.plr {
+    padding: 0px 20px !important;
+}
 
 .pse_md {
     padding: 0px 25px;
@@ -928,20 +933,60 @@ hr {
 .border-radious0 {
     border-radius: 0px !important;
 }
-.h00vh{height:auto;margin-bottom: 75px;}
-.background_grey
-{
+
+.h00vh {
+    height: auto;
+    margin-bottom: 75px;
+}
+
+.background_grey {
     background: transparent;
 }
-.respo_title
-{
+
+.respo_title {
     display: none;
 }
-.large_center
-{
+
+.large_center {
     width: 439px;
     margin: 0 auto;
 }
+
+.summary_main {
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 439px;
+    text-align: center;
+
+    .summary_head {
+        background: $primary;
+        font: $vodafonrg-regular;
+        color: white;
+        font-size: 28px;
+        line-height: 30px;
+        padding: 90px 20px;
+
+        .sh_lab_heading {
+            border: 0px solid red;
+        }
+
+        .sh_lab_title {
+            border: 0px solid black;
+            margin-top: 20px;
+        }
+    }
+
+    .summary_cont {
+        .sc_lab_head {
+            border: 1px solid green;
+        }
+
+        .sc_lab_title {
+            border: 1px solid blue;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .mt-minhed {
         margin-top: 60px;
@@ -953,7 +998,7 @@ hr {
 }
 
 @media (min-width: 767.98px) {
-   
+
     .header .header_left {
         left: 16px !important;
     }
@@ -970,7 +1015,7 @@ hr {
     .side_menu_wrapper {
         width: 700px !important;
     }
-    
+
 }
 
 @media (max-width: 767.98px) {
@@ -979,20 +1024,21 @@ hr {
         line-height: 0.5 !important;
         line-height: 16px;
     }
-    .background_grey{
+
+    .background_grey {
         background-color: #EBEBEB !important;
     }
-    .input-group
-    {
+
+    .input-group {
         width: 50%;
         display: inline-flex;
     }
-    .input-group-otp
-    {
+
+    .input-group-otp {
         width: 20%;
     }
-    .error-message
-    {
+
+    .error-message {
         font-size: 14px;
         line-height: 16px;
         text-align: center;
@@ -1052,16 +1098,84 @@ hr {
     .mt-res-45 {
         margin-top: 45px !important;
     }
-    .body_container
-    {
+
+    .body_container {
         background: $light-gray !important;
     }
-    .respo_title
-    {
+
+    .respo_title {
         display: block;
     }
-    .large_center
-    {
+
+    .large_center {
         width: auto;
     }
+
+    .summary_main {
+        margin: 0 auto;
+        padding-top: 38px;
+        width: auto;
+        text-align: center;
+
+        .summary_head {
+            font-size: 20px;
+            line-height: 22px;
+            padding: 65px 30px;
+            border-radius: 14px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+
+            .sh_lab_heading {
+                border: 0px solid red;
+            }
+
+            .sh_lab_title {
+                border: 0px solid black;
+            }
+        }
+
+        .summary_cont {
+            .sc_lab_head {
+                border: 1px solid green;
+            }
+
+            .sc_lab_title {
+                border: 1px solid blue;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .summary_main {
+        padding-top: 60px;
+        width: auto;
+        text-align: center;
+        margin: 0px 20px;
+        .summary_head {
+            background: #FFF;
+            color: black;
+            padding: 20px 15px;
+            border-radius: 6px;
+
+            .sh_lab_heading {
+                border: 1px solid red;
+            }
+
+            .sh_lab_title {
+                border: 1px solid black;
+            }
+        }
+
+        .summary_cont {
+            .sc_lab_head {
+                border: 1px solid green;
+            }
+
+            .sc_lab_title {
+                border: 1px solid blue;
+            }
+        }
+    }
+
 }
