@@ -91,6 +91,17 @@
       box-sizing: border-box;
 }
 
+@media (max-width: 480px) {
+.mfooter-main {
+    width: 100%;
+    padding: 0px 13px;
+}
+.buy_button_main {
+    border: 0px solid #ccc;
+    margin: 5px 11%;
+  }
+}
+
 @media (max-width: 350px) {
 
     .mfooter-main {
