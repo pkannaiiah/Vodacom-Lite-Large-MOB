@@ -3586,4 +3586,24 @@ body.menu-open .real-menu {
   .buy_button_main .buy_button .buy_button_2 .buy_text {
     border: 0px solid red;
   }
+}
+@media (max-width: 320px) {
+  .dflex-card-comp005 .card-group {
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .vfp-fcard1 p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 3px;
+  }
+  .vfp-fcard1 label {
+    font-family: "VodafoneRg-Bold", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+  }
 }/*# sourceMappingURL=custom.css.map */
