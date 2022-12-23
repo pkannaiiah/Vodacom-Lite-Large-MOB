@@ -1956,9 +1956,6 @@ hr {
     border: 0px solid green;
     margin-top: 20px;
   }
-  .summary_main .summary_cont .sc_lab_title {
-    border: 1px solid blue;
-  }
   .summary_main .summary_cont .sc_lab_support {
     font-size: 14px;
     line-height: 16px;
